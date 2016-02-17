@@ -82,7 +82,7 @@
   	
   	</div>
 	</header>
-	<body>
+	<main>
 
 		<div class="container">
 			<section>
@@ -138,9 +138,18 @@
 			
 			
 		</div>
-	
-		
-	</body>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+    jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() 
+{
+    var country = geoplugin_countryName();
+    var zone = geoplugin_region();
+    var district = geoplugin_city();
+    console.log("Your location is: " + country + ", " + zone + ", " + district);
+});
+});
+	</script>
+	</main>
 	<footer>
   <div class="container">
     <div class="row">
