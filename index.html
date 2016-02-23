@@ -38,6 +38,26 @@
   		}); // end of document ready
 		})(jQuery); // end of jQuery name space
 	</script>
+	<script type="text/javascript">
+		setInterval(blinktext, 500);
+		count=0;
+		function blinktext() {
+            var cntrl = document.getElementById("lang");
+            if (count == 0)
+                txt = cntrl.innerHTML;
+            if (count % 5 == 1)
+                cntrl.innerHTML = "echo \"Hello World\"";
+            else if(count % 5 == 2)
+                cntrl.innerHTML = "print \"Hello World\"";
+            else if(count % 5 == 0)
+                cntrl.innerHTML = "alert(\"Hello World\")";
+            else if(count % 5 == 3)
+            	cntrl.innerHTML = "printf(\"Hello World\")";
+            else if(count % 5 == 4)
+            	cntrl.innerHTML = "{{\"Hello World\"}}";
+            count++;
+        }
+	</script>
 </head>
 <body>
 	<div id="fb-root"></div>
@@ -100,6 +120,7 @@
 			<h5 class="center-align">
 			I am <strong>Lalit Chauhan</strong>, a student at N.I.T Raipur.</h4>
 			<h5 class="center-align">Exploring Since <strong>1995</strong> !</h5>
+			<h5 class="center-align" id="lang"></h5>
 			</div>
 			
 				<div class="row">
