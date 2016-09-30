@@ -64,7 +64,7 @@
  mainApp.controller("indexCtrl",function ($scope,$http) {
   // body...
 
-    $http.get("http://139.59.26.94/counter.php").success(
+    $http.get("http://139.59.26.94/counter.php?id=1").success(
       function(data,status) {
         ;
       });
