@@ -1,0 +1,1288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- base_content.html -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Tag list - CodeChef Discuss</title>
+        <meta name="description" content="Ask and answer questions." />
+        <meta name="keywords" content="codechef,programming,contest,discuss,forum,community" />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <link rel="shortcut icon" href="/upfiles/favicon_1.ico" />
+        <link href="/m/default/media/style/style.css" rel="stylesheet" type="text/css" />
+        
+        <link href="/m/default/media/style/custom.css?q=star_system" rel="stylesheet" type="text/css" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Tags in codechef" />
+        <meta property="og:description"        content="tags avaialble in codechef" />
+        <meta property="og:image"              content="https://s3.amazonaws.com/codechef_shared/misc/fb-image-icon.png" />
+        <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.js" />
+        <!--[if IE 6]>
+
+        <style type="text/css">
+        img, div, a { behavior: url(/m/default/media/iepngfix/iepngfix.htc) }
+        </style>
+        <![endif]-->
+        
+
+        <script src="//www.google.com/jsapi" type="text/javascript"></script>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+            google.load("jquery", "1.4.2");
+            google.load("jqueryui", "1", {autoload:true});
+
+            var i18nLang = 'en';
+            var appUrl = 'http://discusstest.codechef.com/'
+            var scriptUrl = '/'
+            var osqaSkin = 'default';
+
+            var messages = {
+                username: 'lalitc375',
+                confirm: "Are you sure?",
+                yes: "Yes",
+                no: "No",
+                message: "Message:",
+                cancel: "Cancel",
+                close: "Close",
+                ok: "Ok",
+                matching_tags_url: "/matching_tags/",
+                word: "word",
+                words: "words",
+                character: "character",
+                characters: "characters"
+            }
+        /*]]>*/
+        </script>
+        <script type="text/javascript" src="/m/default/media/js/osqa.main.js?rv=318"></script>
+        
+        
+        
+        
+       <script type="text/javascript">
+       /*<![CDATA[*/
+        $().ready(function(){
+            $("#ipSearchTag").focus();
+
+            var orderby = "";
+            if(orderby != "used" && orderby != "name")
+                orderby = "used";
+            $("#sort_" + orderby).attr('className',"on");
+            $("#type-tag").attr('checked',true);
+
+            Hilite.exact = false;
+            Hilite.elementid = "searchtags";
+            Hilite.debug_referrer = location.href;
+        });
+        /*]]>*/
+        </script>
+
+        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="CodeChef Discuss Search" />
+        
+    </head>
+    <body>
+        <div class="wrapper">
+        
+        <!-- template header.html -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<style>
+.MathJax {
+    font-size: 2em;
+}
+</style>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        initSearchBoxValue();
+    });
+
+    MathJax.Hub.Config({
+        "tex2jax": {
+            inlineMath: [['$', '$']],
+            multiLine: true
+        }
+    });
+
+    function initSearchBoxValue()
+    {
+        var searchKeyword= $("#keywords").val();
+            if (searchKeyword=="")
+            {
+                $("#keywords").val("Search Here...");
+            }
+   }
+
+    function searchBoxOnBlur(){
+        $("#keyword").className="searchInput";
+        if ($("#keywords").val()=="")
+                $("#keywords").val("Search Here...");
+    }
+
+    function searchBoxOnFocus(){
+        $("#keyword").className="searchInputFocused";
+        if ($("#keywords").val()=="Search Here...")
+            $("#keywords").val("");
+   }
+
+    function about(){
+        if (document.URL=="http://osqa.codechef.local/about/")
+        {
+            $("")
+        }
+    }
+
+</script>
+
+
+
+ 
+
+	<div id="roof">
+
+
+
+		<div id="top" style="position:absolute; text-align: left;">
+            <a href="https://www.codechef.com/">
+                << Back to CodeChef
+            </a>
+		</div>
+
+		<div id="logo">
+			<a href="/">
+				<img src="/upfiles/site-logo_21.png" title="back to home page" alt="CodeChef Discuss logo"/>
+			</a>
+		</div>
+
+		<div id="top">
+		     <a href="/users/46655/lalitc375" >lalitc375</a> <span class="score" title="2001 reputation points"><span class="">2.0k</span></span><span title="1 badges"><span class="bronze">&#9679;</span><span class="badgecount">1</span></span> <a href="/logout/" >Log Out</a> 
+
+            <div id="nav">
+                <a id="nav_questions" href="/questions/" >questions</a><a id="nav_tags" class="on" href="/tags/" >tags</a><a id="nav_users" href="/users/" >users</a><a id="nav_badges" href="/badges/" >badges</a><a id="nav_unanswered" href="/questions/unanswered/" >unanswered</a>
+                <a id="horiSeparator"/>
+                <a id="nav_ask" href="/questions/ask/" class="special">ask a question</a>
+                <a id="nav_about" href="/about" class="off" onclick="about()" >about</a>
+                <a id="nav_faq" href="/faq">faq</a>
+
+            </div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="clear"></div>
+	<div id="searchBar">
+
+
+
+
+        <table id="searchBarTable">
+            <tr>
+                <td class="left">
+                    CodeChef Discussion
+                </td>
+                <td class="right">
+                    <form action="/search/" method="get">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='eUTsSM09P7Prfib5yY8y1n3qcFW66Vww' />
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" class="searchInput" value="" name="q" id="keywords" onfocus="searchBoxOnFocus()" onblur="searchBoxOnBlur()"/>
+                                </td>
+                                <td>
+                                    <div class="options">
+                                        <input id="type-question" type="radio" value="question" name="t" 
+                                            checked="checked" /><label for="type-question">questions</label>
+                                        <input id="type-tag" type="radio" value="tag" name="t" /><label for="type-tag">tags</label>
+                                        <input id="type-user" type="radio" value="user" name="t" /><label for="type-user">users</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <h1 id="separator">
+        </h1>
+	</div>
+
+
+	
+
+<!-- end template header.html -->
+
+        
+        <div id="wrapper">
+            <div id="room">
+                <div id="CAFull">
+                    
+<!-- Tabs -->
+<div class="tabBar">
+    <div class="headQuestions">Tag list</div>
+    
+<div class="tabsA"><a href="/tags/?sort=name" title="sorted alphabetically">by name</a><a href="/tags/?sort=used" class="on" title="sorted by frequency of tag use">by popularity</a></div>
+
+    <div class="tabsA" style="border-right: 1px solid black;">
+        
+        <a href="/tags/?type=restricted">
+            restricted tags
+        </a>
+        
+    </div>
+</div>
+<div id="searchtags">
+<p>
+
+
+</p>
+
+<ul class="tagsList tags">
+    
+    
+   <li>
+    <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged'editorial'using tags" rel="tag">
+        editorial
+    </a>&nbsp;
+    <span class="tag-number">&#215; 2,365</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-c" href="/tags/c/" title="see questions tagged'c'using tags" rel="tag">
+        c
+    </a>&nbsp;
+    <span class="tag-number">&#215; 1,026</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-easy" href="/tags/easy/" title="see questions tagged'easy'using tags" rel="tag">
+        easy
+    </a>&nbsp;
+    <span class="tag-number">&#215; 998</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-c++" href="/tags/c%252B%252B/" title="see questions tagged'c++'using tags" rel="tag">
+        c++
+    </a>&nbsp;
+    <span class="tag-number">&#215; 955</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-wrong-answer" href="/tags/wrong-answer/" title="see questions tagged'wrong-answer'using tags" rel="tag">
+        wrong-answer
+    </a>&nbsp;
+    <span class="tag-number">&#215; 790</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-algorithm" href="/tags/algorithm/" title="see questions tagged'algorithm'using tags" rel="tag">
+        algorithm
+    </a>&nbsp;
+    <span class="tag-number">&#215; 723</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-help" href="/tags/help/" title="see questions tagged'help'using tags" rel="tag">
+        help
+    </a>&nbsp;
+    <span class="tag-number">&#215; 666</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-java" href="/tags/java/" title="see questions tagged'java'using tags" rel="tag">
+        java
+    </a>&nbsp;
+    <span class="tag-number">&#215; 575</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-medium" href="/tags/medium/" title="see questions tagged'medium'using tags" rel="tag">
+        medium
+    </a>&nbsp;
+    <span class="tag-number">&#215; 525</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-data-structure" href="/tags/data-structure/" title="see questions tagged'data-structure'using tags" rel="tag">
+        data-structure
+    </a>&nbsp;
+    <span class="tag-number">&#215; 477</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-dp" href="/tags/dp/" title="see questions tagged'dp'using tags" rel="tag">
+        dp
+    </a>&nbsp;
+    <span class="tag-number">&#215; 477</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-codechef" href="/tags/codechef/" title="see questions tagged'codechef'using tags" rel="tag">
+        codechef
+    </a>&nbsp;
+    <span class="tag-number">&#215; 471</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-long-contest" href="/tags/long-contest/" title="see questions tagged'long-contest'using tags" rel="tag">
+        long-contest
+    </a>&nbsp;
+    <span class="tag-number">&#215; 406</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-spoj" href="/tags/spoj/" title="see questions tagged'spoj'using tags" rel="tag">
+        spoj
+    </a>&nbsp;
+    <span class="tag-number">&#215; 396</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-tle" href="/tags/tle/" title="see questions tagged'tle'using tags" rel="tag">
+        tle
+    </a>&nbsp;
+    <span class="tag-number">&#215; 387</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-acmicpc" href="/tags/acmicpc/" title="see questions tagged'acmicpc'using tags" rel="tag">
+        acmicpc
+    </a>&nbsp;
+    <span class="tag-number">&#215; 386</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-datastructure" href="/tags/datastructure/" title="see questions tagged'datastructure'using tags" rel="tag">
+        datastructure
+    </a>&nbsp;
+    <span class="tag-number">&#215; 365</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-algorithms" href="/tags/algorithms/" title="see questions tagged'algorithms'using tags" rel="tag">
+        algorithms
+    </a>&nbsp;
+    <span class="tag-number">&#215; 348</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-programming" href="/tags/programming/" title="see questions tagged'programming'using tags" rel="tag">
+        programming
+    </a>&nbsp;
+    <span class="tag-number">&#215; 339</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-admin" href="/tags/admin/" title="see questions tagged'admin'using tags" rel="tag">
+        admin
+    </a>&nbsp;
+    <span class="tag-number">&#215; 321</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-segment-tree" href="/tags/segment-tree/" title="see questions tagged'segment-tree'using tags" rel="tag">
+        segment-tree
+    </a>&nbsp;
+    <span class="tag-number">&#215; 320</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-oct14" href="/tags/oct14/" title="see questions tagged'oct14'using tags" rel="tag">
+        oct14
+    </a>&nbsp;
+    <span class="tag-number">&#215; 314</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-dynamic-prog" href="/tags/dynamic-prog/" title="see questions tagged'dynamic-prog'using tags" rel="tag">
+        dynamic-prog
+    </a>&nbsp;
+    <span class="tag-number">&#215; 309</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-runtime-error" href="/tags/runtime-error/" title="see questions tagged'runtime-error'using tags" rel="tag">
+        runtime-error
+    </a>&nbsp;
+    <span class="tag-number">&#215; 287</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-hard" href="/tags/hard/" title="see questions tagged'hard'using tags" rel="tag">
+        hard
+    </a>&nbsp;
+    <span class="tag-number">&#215; 284</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-cakewalk" href="/tags/cakewalk/" title="see questions tagged'cakewalk'using tags" rel="tag">
+        cakewalk
+    </a>&nbsp;
+    <span class="tag-number">&#215; 282</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-problem" href="/tags/problem/" title="see questions tagged'problem'using tags" rel="tag">
+        problem
+    </a>&nbsp;
+    <span class="tag-number">&#215; 264</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-maths" href="/tags/maths/" title="see questions tagged'maths'using tags" rel="tag">
+        maths
+    </a>&nbsp;
+    <span class="tag-number">&#215; 262</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-challenge" href="/tags/challenge/" title="see questions tagged'challenge'using tags" rel="tag">
+        challenge
+    </a>&nbsp;
+    <span class="tag-number">&#215; 261</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-graph" href="/tags/graph/" title="see questions tagged'graph'using tags" rel="tag">
+        graph
+    </a>&nbsp;
+    <span class="tag-number">&#215; 258</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-simple" href="/tags/simple/" title="see questions tagged'simple'using tags" rel="tag">
+        simple
+    </a>&nbsp;
+    <span class="tag-number">&#215; 253</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-cheating" href="/tags/cheating/" title="see questions tagged'cheating'using tags" rel="tag">
+        cheating
+    </a>&nbsp;
+    <span class="tag-number">&#215; 246</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-contest" href="/tags/contest/" title="see questions tagged'contest'using tags" rel="tag">
+        contest
+    </a>&nbsp;
+    <span class="tag-number">&#215; 241</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-nzec" href="/tags/nzec/" title="see questions tagged'nzec'using tags" rel="tag">
+        nzec
+    </a>&nbsp;
+    <span class="tag-number">&#215; 234</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-practice" href="/tags/practice/" title="see questions tagged'practice'using tags" rel="tag">
+        practice
+    </a>&nbsp;
+    <span class="tag-number">&#215; 233</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-easy-medium" href="/tags/easy-medium/" title="see questions tagged'easy-medium'using tags" rel="tag">
+        easy-medium
+    </a>&nbsp;
+    <span class="tag-number">&#215; 226</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-dec14" href="/tags/dec14/" title="see questions tagged'dec14'using tags" rel="tag">
+        dec14
+    </a>&nbsp;
+    <span class="tag-number">&#215; 216</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-error" href="/tags/error/" title="see questions tagged'error'using tags" rel="tag">
+        error
+    </a>&nbsp;
+    <span class="tag-number">&#215; 214</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-python" href="/tags/python/" title="see questions tagged'python'using tags" rel="tag">
+        python
+    </a>&nbsp;
+    <span class="tag-number">&#215; 208</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-ratings" href="/tags/ratings/" title="see questions tagged'ratings'using tags" rel="tag">
+        ratings
+    </a>&nbsp;
+    <span class="tag-number">&#215; 205</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-greedy" href="/tags/greedy/" title="see questions tagged'greedy'using tags" rel="tag">
+        greedy
+    </a>&nbsp;
+    <span class="tag-number">&#215; 203</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-jan15" href="/tags/jan15/" title="see questions tagged'jan15'using tags" rel="tag">
+        jan15
+    </a>&nbsp;
+    <span class="tag-number">&#215; 188</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-feb15" href="/tags/feb15/" title="see questions tagged'feb15'using tags" rel="tag">
+        feb15
+    </a>&nbsp;
+    <span class="tag-number">&#215; 177</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-sigsegv" href="/tags/sigsegv/" title="see questions tagged'sigsegv'using tags" rel="tag">
+        sigsegv
+    </a>&nbsp;
+    <span class="tag-number">&#215; 176</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-nov14" href="/tags/nov14/" title="see questions tagged'nov14'using tags" rel="tag">
+        nov14
+    </a>&nbsp;
+    <span class="tag-number">&#215; 172</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-march15" href="/tags/march15/" title="see questions tagged'march15'using tags" rel="tag">
+        march15
+    </a>&nbsp;
+    <span class="tag-number">&#215; 172</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-sorting" href="/tags/sorting/" title="see questions tagged'sorting'using tags" rel="tag">
+        sorting
+    </a>&nbsp;
+    <span class="tag-number">&#215; 162</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-ad-hoc" href="/tags/ad-hoc/" title="see questions tagged'ad-hoc'using tags" rel="tag">
+        ad-hoc
+    </a>&nbsp;
+    <span class="tag-number">&#215; 156</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-wrong" href="/tags/wrong/" title="see questions tagged'wrong'using tags" rel="tag">
+        wrong
+    </a>&nbsp;
+    <span class="tag-number">&#215; 155</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-bit" href="/tags/bit/" title="see questions tagged'bit'using tags" rel="tag">
+        bit
+    </a>&nbsp;
+    <span class="tag-number">&#215; 154</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-medium-hard" href="/tags/medium-hard/" title="see questions tagged'medium-hard'using tags" rel="tag">
+        medium-hard
+    </a>&nbsp;
+    <span class="tag-number">&#215; 152</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-runtime" href="/tags/runtime/" title="see questions tagged'runtime'using tags" rel="tag">
+        runtime
+    </a>&nbsp;
+    <span class="tag-number">&#215; 149</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-bfs" href="/tags/bfs/" title="see questions tagged'bfs'using tags" rel="tag">
+        bfs
+    </a>&nbsp;
+    <span class="tag-number">&#215; 145</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-cook51" href="/tags/cook51/" title="see questions tagged'cook51'using tags" rel="tag">
+        cook51
+    </a>&nbsp;
+    <span class="tag-number">&#215; 145</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-dfs" href="/tags/dfs/" title="see questions tagged'dfs'using tags" rel="tag">
+        dfs
+    </a>&nbsp;
+    <span class="tag-number">&#215; 142</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-string" href="/tags/string/" title="see questions tagged'string'using tags" rel="tag">
+        string
+    </a>&nbsp;
+    <span class="tag-number">&#215; 140</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-combinatorics" href="/tags/combinatorics/" title="see questions tagged'combinatorics'using tags" rel="tag">
+        combinatorics
+    </a>&nbsp;
+    <span class="tag-number">&#215; 138</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-april15" href="/tags/april15/" title="see questions tagged'april15'using tags" rel="tag">
+        april15
+    </a>&nbsp;
+    <span class="tag-number">&#215; 136</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-time-limit" href="/tags/time-limit/" title="see questions tagged'time-limit'using tags" rel="tag">
+        time-limit
+    </a>&nbsp;
+    <span class="tag-number">&#215; 133</span>
+    <br/>
+
+    </li>
+
+   <li>
+    <a class="tag-link-atm" href="/tags/atm/" title="see questions tagged'atm'using tags" rel="tag">
+        atm
+    </a>&nbsp;
+    <span class="tag-number">&#215; 127</span>
+    <br/>
+
+    </li>
+
+</ul>
+
+</div>
+
+
+
+                </div>
+                <div id="tail" style="clear:both;">
+                    
+<div class="pager">
+    <p class="paginator"><span class="curr this_page">1</span><a class="page" href="/tags/?sort=used&amp;page=2" >2</a><a class="page" href="/tags/?sort=used&amp;page=3" >3</a><a class="page" href="/tags/?sort=used&amp;page=4" >4</a><a class="page" href="/tags/?sort=used&amp;page=5" >5</a>
+                
+            
+        
+    
+        
+          ...
+        
+    
+        
+            
+                
+                     <a class="page" href="/tags/?sort=used&amp;page=71" >71</a><span class="next"><a href="/tags/?sort=used&amp;page=2" title="next page">next &raquo;</a></span></p>
+</div>              
+
+                </div>
+            </div>
+            <div class="spacer3"></div>
+        </div>
+        
+        
+            
+            <div id="ground">
+                
+                    <p><html>
+<head>
+<link rel="stylesheet" type="text/css" href="/m/default/media/style/cc.css">
+</head></p>
+<div id="cc-footer" class="cc-wrapper">
+    <div class="cc-inner-wrapper">
+        <!-- SECOND NAV -->
+        <div class="cc-cols-2">
+            <div id="cc-secondary-nav">
+                <ul>
+                    <!-- <li><a href="http://blog.corp.pw/" target="_blank">.pw Corp Blog</a></li>
+                    <li><a href="http://start.pw/" target="_blank">Vision</li> -->
+                    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+                    <li><a href="http://www.directi.com/" target="_blank">About Directi</a></li>
+                    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+                    <!-- <li><a href="http://wiki.directi.com/" target="_blank">Wiki</a></li>
+                    <li><a href="http://wiki.directi.com/display/corp/Home" target="_blank">About</a></li> -->
+                </ul>
+                <ul>
+                    <li><a href="http://www.codechef.com/campus/">CodeChef Campus Chapters</a></li>
+                    <li><a href="http://www.codechef.com/school/">CodeChef For Schools</a></li>
+                    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="cc-fineprint">
+                <p>© 2009, Directi Group. All Rights Reserved.</p>
+                <p><small>Powered by OSQA<br> </small></p>
+            </div>
+        </div>
+        <!-- /SECOND NAV -->
+        <!-- LEGAL & COPYRIGHT -->
+        <div>
+            <div id="cc-sponsor-strip">
+                <a href="http://www.directi.com" target="_blank"><img src="/m/default/media/images/footer-sponsor-strip.gif" alt="Sponsors" title="Sponsors"></a>
+            </div>
+        </div>
+        <!-- /LEGAL & COPYRIGHT -->
+    </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4090524-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Start Alexa Certify Javascript -->
+
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"q16Cj1a8gN00iz", domain:"codechef.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz" style="display:none" height="1" width="1" alt="" /></noscript>
+
+<!-- End Alexa Certify Javascript -->
+                
+            </div>
+            
+        
+        
+        
+        
+        </div>
+
+        <!-- Put all elements with fixed position here, IE6 fixed position fix: http://ryanfait.com/position-fixed-ie6/ -->
+        <div class="notify" style="display:none">
+            
+                
+            
+            <a id="close-notify" onclick="notify.close(true)">&#215;</a>
+        </div>
+
+    
+<link rel="stylesheet" href="/static/debug_toolbar/css/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/static/debug_toolbar/css/toolbar.css" type="text/css" />
+
+<!-- Prevent our copy of jQuery from registering as an AMD module on sites that use RequireJS. -->
+<script src="/static/debug_toolbar/js/jquery_pre.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/static/debug_toolbar/js/jquery_post.js"></script>
+
+<script src="/static/debug_toolbar/js/toolbar.js"></script>
+<div id="djDebug" class="djdt-hidden" dir="ltr"
+     data-store-id="b45d579dd5944229bc276817e11b7a6c" data-render-panel-url="/debug/render_panel/"
+     >
+	<div class="djdt-hidden" id="djDebugToolbar">
+		<ul id="djDebugPanelList">
+			
+			<li><a id="djHideToolBarButton" href="#" title="Hide toolbar">Hide &#187;</a></li>
+			
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtVersionsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Versions" class="VersionsPanel">
+					
+					Versions
+					
+					
+						<br /><small>Django 1.8</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTimerPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Time" class="TimerPanel">
+					
+					Time
+					
+					
+						<br /><small>CPU: 444.00ms (462.02ms)</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSettingsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Settings from &lt;code&gt;settings&lt;/code&gt;" class="SettingsPanel">
+					
+					Settings
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtHeadersPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Headers" class="HeadersPanel">
+					
+					Headers
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRequestPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Request" class="RequestPanel">
+					
+					Request
+					
+					
+						<br /><small>tags</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSQLPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="SQL queries from 1 connection" class="SQLPanel">
+					
+					SQL
+					
+					
+						<br /><small>3 queries in 1.27ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtStaticFilesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Static files (79 found, 0 used)" class="StaticFilesPanel">
+					
+					Static files
+					
+					
+						<br /><small>0 files used</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTemplatesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Templates (5 rendered)" class="TemplatesPanel">
+					
+					Templates
+					
+					
+						<br /><small>paginator/sort_tabs.html</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtCachePanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Cache calls from 1 backend" class="CachePanel">
+					
+					Cache
+					
+					
+						<br /><small>27 calls in 17.00ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSignalsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Signals" class="SignalsPanel">
+					
+					Signals
+					
+					
+						<br /><small>17 receivers of 12 signals</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtLoggingPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Log messages" class="LoggingPanel">
+					
+					Logging
+					
+					
+						<br /><small>0 messages</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRedirectsPanel" title="Enable for next and successive requests" />
+					
+						<div class="djdt-contentless djdt-disabled">
+					
+					Intercept redirects
+					
+					
+						</div>
+					
+				</li>
+			
+		</ul>
+	</div>
+	<div class="djdt-hidden" id="djDebugToolbarHandle">
+		<span title="Show toolbar" id="djShowToolBarButton">&#171;</span>
+	</div>
+	
+		
+			<div id="VersionsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Versions</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TimerPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Time</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SettingsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Settings from <code>settings</code></h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="HeadersPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Headers</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="RequestPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Request</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SQLPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>SQL queries from 1 connection</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="StaticFilesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Static files (79 found, 0 used)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TemplatesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Templates (5 rendered)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="CachePanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Cache calls from 1 backend</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SignalsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Signals</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="LoggingPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Log messages</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+	
+	<div id="djDebugWindow" class="djdt-panelContent"></div>
+</div>
+</body>
+</html>
+<!-- end template base_content.html -->

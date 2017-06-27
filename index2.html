@@ -1,0 +1,1481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- base_content.html -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>cosine similarity - CodeChef Discuss</title>
+        <meta name="description" content="Cosine similarity is a measure of similarity between two vectors of an inner product space that measures the cosine of the angle between them.Note that these bounds apply for any number of dimensions, and cosine similarity is most commonly used in high-dimensional positive spacesHere are two very s" />
+        <meta name="keywords" content="cosine,similarity" />
+        
+        <link rel="canonical" href="http://discusstest.codechef.com/questions/68063/cosine-similarity" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="/questions/68063/cosine-similarity?type=rss">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <link rel="shortcut icon" href="/upfiles/favicon_1.ico" />
+        <link href="/m/default/media/style/style.css" rel="stylesheet" type="text/css" />
+        
+        <link href="/m/default/media/style/custom.css?q=star_system" rel="stylesheet" type="text/css" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="cosine similarity" />
+        <meta property="og:description"        content="Cosine similarity is a measure of similarity between two vectors of an inner product space that measures the cosine of the angle between them.Note that these bounds apply for any number of dimensions, and cosine similarity is most commonly used in high-dimensional positive spacesHere are two very s" />
+        <meta property="og:image"              content="https://s3.amazonaws.com/codechef_shared/misc/fb-image-icon.png" />
+        <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.js" />
+        <!--[if IE 6]>
+
+        <style type="text/css">
+        img, div, a { behavior: url(/m/default/media/iepngfix/iepngfix.htc) }
+        </style>
+        <![endif]-->
+        
+
+        <script src="//www.google.com/jsapi" type="text/javascript"></script>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+            google.load("jquery", "1.4.2");
+            google.load("jqueryui", "1", {autoload:true});
+
+            var i18nLang = 'en';
+            var appUrl = 'http://discusstest.codechef.com/'
+            var scriptUrl = '/'
+            var osqaSkin = 'default';
+
+            var messages = {
+                username: 'lalitc375',
+                confirm: "Are you sure?",
+                yes: "Yes",
+                no: "No",
+                message: "Message:",
+                cancel: "Cancel",
+                close: "Close",
+                ok: "Ok",
+                matching_tags_url: "/matching_tags/",
+                word: "word",
+                words: "words",
+                character: "character",
+                characters: "characters"
+            }
+        /*]]>*/
+        </script>
+        <script type="text/javascript" src="/m/default/media/js/osqa.main.js?rv=318"></script>
+        
+        
+        
+        
+        
+        <script type='text/javascript' src='/m/default/media/js/osqa.question.js'></script>
+        <script type='text/javascript' src='/m/default/media/js/jquery.caret.js'></script>
+        <script type='text/javascript' src='/m/default/media/js/wmd/showdown.js'></script>
+        <script type='text/javascript' src='/m/default/media/js/wmd/wmd.js'></script>
+        <link rel="stylesheet" type="text/css" href="/m/default/media/js/wmd/wmd.css" />
+
+        
+        <script type='text/javascript' src='/m/default/media/js/viewbox_min.js'></script>
+        <script type='text/javascript' src='/m/default/media/js/youtube.js'></script>
+        <link rel="stylesheet" type="text/css" href="/m/default/media/js/viewbox.css" />
+        
+        
+
+        <script type="text/javascript">
+        $().ready(function(){
+            $("#nav_questions").attr('className',"on");
+            var answer_sort_tab = "";
+
+            if (answer_sort_tab) {
+                $("#" + answer_sort_tab).attr('className',"on");
+            }
+
+            $('#editor').TextAreaResizer();
+
+            //toggle preview of editor
+            var display = true;
+            var txt = "[hide preview]";
+            $('#pre-collapse').text(txt);
+            $('#pre-collapse').bind('click', function(){
+                txt = display ? "[show preview]" : "[hide preview]";
+                display = !display;
+                $('#previewer').toggle();
+                $('#pre-collapse').text(txt);
+            });
+        });
+
+        function submitClicked(e, f) {
+            if(!(browserTester('chrome') || browserTester('safari'))) {
+                $("input.submit")[0].disabled=true;
+            }
+            window.removeEventListener('beforeunload', beforeUnload, true);
+            if (f) {
+                f.submit();
+            }
+        }
+
+        function beforeUnload(e) {
+
+            if($("textarea#editor")[0].value != "") {
+                return yourWorkWillBeLost(e);
+            }
+
+            var commentBoxes = $("textarea.commentBox");
+            for(var index = 0; index < commentBoxes.length; index++) {
+                if(commentBoxes[index].value != "") {
+                    return yourWorkWillBeLost(e);
+                }
+            }
+        }
+        window.addEventListener('beforeunload', beforeUnload, true);
+        </script>
+        <noscript>
+            <style>
+                .comment.not_top_scorer {
+                    display: block;
+                }
+                .comment-form-container {
+                    display: block;
+                }
+                .div.comment-tools {
+                    display: none;
+                }
+            </style>
+        </noscript>
+
+        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="CodeChef Discuss Search" />
+        
+    </head>
+    <body>
+        <div class="wrapper">
+        
+        <!-- template header.html -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<style>
+.MathJax {
+    font-size: 2em;
+}
+</style>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        initSearchBoxValue();
+    });
+
+    MathJax.Hub.Config({
+        "tex2jax": {
+            inlineMath: [['$', '$']],
+            multiLine: true
+        }
+    });
+
+    function initSearchBoxValue()
+    {
+        var searchKeyword= $("#keywords").val();
+            if (searchKeyword=="")
+            {
+                $("#keywords").val("Search Here...");
+            }
+   }
+
+    function searchBoxOnBlur(){
+        $("#keyword").className="searchInput";
+        if ($("#keywords").val()=="")
+                $("#keywords").val("Search Here...");
+    }
+
+    function searchBoxOnFocus(){
+        $("#keyword").className="searchInputFocused";
+        if ($("#keywords").val()=="Search Here...")
+            $("#keywords").val("");
+   }
+
+    function about(){
+        if (document.URL=="http://osqa.codechef.local/about/")
+        {
+            $("")
+        }
+    }
+
+</script>
+
+
+
+ 
+
+	<div id="roof">
+
+
+
+		<div id="top" style="position:absolute; text-align: left;">
+            <a href="https://www.codechef.com/">
+                << Back to CodeChef
+            </a>
+		</div>
+
+		<div id="logo">
+			<a href="/">
+				<img src="/upfiles/site-logo_21.png" title="back to home page" alt="CodeChef Discuss logo"/>
+			</a>
+		</div>
+
+		<div id="top">
+		     <a href="/users/46655/lalitc375" >lalitc375</a> <span class="score" title="2001 reputation points"><span class="">2.0k</span></span><span title="1 badges"><span class="bronze">&#9679;</span><span class="badgecount">1</span></span> <a href="/logout/" >Log Out</a> 
+
+            <div id="nav">
+                <a id="nav_questions" class="on" href="/questions/" >questions</a><a id="nav_tags" href="/tags/" >tags</a><a id="nav_users" href="/users/" >users</a><a id="nav_badges" href="/badges/" >badges</a><a id="nav_unanswered" href="/questions/unanswered/" >unanswered</a>
+                <a id="horiSeparator"/>
+                <a id="nav_ask" href="/questions/ask/" class="special">ask a question</a>
+                <a id="nav_about" href="/about" class="off" onclick="about()" >about</a>
+                <a id="nav_faq" href="/faq">faq</a>
+
+            </div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="clear"></div>
+	<div id="searchBar">
+
+
+
+
+        <table id="searchBarTable">
+            <tr>
+                <td class="left">
+                    CodeChef Discussion
+                </td>
+                <td class="right">
+                    <form action="/search/" method="get">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='o2VAN2KftAmxZKlhkyIYAYr7VDfZbdWn' />
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" class="searchInput" value="" name="q" id="keywords" onfocus="searchBoxOnFocus()" onblur="searchBoxOnBlur()"/>
+                                </td>
+                                <td>
+                                    <div class="options">
+                                        <input id="type-question" type="radio" value="question" name="t" 
+                                            checked="checked" /><label for="type-question">questions</label>
+                                        <input id="type-tag" type="radio" value="tag" name="t" /><label for="type-tag">tags</label>
+                                        <input id="type-user" type="radio" value="user" name="t" /><label for="type-user">users</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <h1 id="separator">
+        </h1>
+	</div>
+
+
+	
+
+<!-- end template header.html -->
+
+        
+
+
+
+<div id="wrapper">
+    
+    
+    <div id="room">
+        <div id="CALeft">
+            
+<div class="headNormal">
+    <h1>cosine similarity</h1>
+</div>
+<div id="main-body" class="">
+    <div id="askform">
+            <table style="width:100%;" id="question-table" >
+                <tr>
+                    <td style="width:30px;vertical-align:top">
+                        <div class="vote-buttons">
+                            
+
+<a id="post-68063-upvote" title="I like this post (click again to cancel)"
+    class="ajax-command post-vote up  on"
+    href="/vote/68063/up/" rel="nofollow"> </a>
+<div id="post-68063-score" class="post-score"
+    title="current number of votes">
+    1
+</div>
+<a id="post-68063-downvote" title="I dont like this post (click again to cancel)"
+    class="ajax-command post-vote down"
+href="/vote/68063/down/" rel="nofollow"> </a>
+                            
+
+<a id="favorite-mark" title="mark/unmark this question as favorite (click again to cancel)"
+    class="ajax-command favorite-mark "
+    href="/mark_favorite/68063/" rel="nofollow"> </a>
+<div id="favorite-count" class="favorite-count">
+   
+</div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div id="item-right">
+                            <div class="question-body">
+                                <p>Cosine similarity is a measure of similarity between two vectors of an inner product space that measures the cosine of the angle between them.Note that these bounds apply for any number of dimensions, and cosine similarity is most commonly used in high-dimensional positive spaces</p>
+<p>Here are two very short texts to compare:</p>
+<p>Text 1: Julie loves me more than Linda loves me</p>
+<p>Text 2: Jane likes me more than Julie loves me</p>
+<p>We want to know how similar these texts are, purely in terms of word counts (and ignoring word order). We begin by making a list of the words from both texts:</p>
+<p>me Julie loves Linda than more likes Jane</p>
+<p>Now we count the number of times each of these words appears in each text:</p>
+<p>me 2 2</p>
+<p>Julie 1 1</p>
+<p>likes 0 1</p>
+<p>loves 2 1</p>
+<p>Jane 0 1</p>
+<p>Linda 1 0</p>
+<p>than 1 1</p>
+<p>more 1 1</p>
+<p>We are not interested in the words themselves though. We are interested only in those two vertical vectors of counts. For instance, there are two instances of 'me' in each text. We are going to decide how close these two texts are to each other by calculating one function of those two vectors, namely the cosine of the angle between them.</p>
+<p>The two vectors are, again:</p>
+<p>a: [2, 1, 0, 2, 0, 1, 1, 1]</p>
+<p>b: [2, 1, 1, 1, 1, 0, 1, 1]</p>
+<p>The cosine of the angle between them is about 0.822.</p>
+<p>These vectors are 8-dimensional. A virtue of using cosine similarity is clearly that it converts a question that is beyond human ability to visualise to one that can be. In this case you can think of this as the angle of about 35 degrees which is some 'distance' from zero or perfect agreement.</p>
+<p>here is my c++ code implementing it</p>
+<p><a href="http://ideone.com/zgLJt8">http://ideone.com/zgLJt8</a></p>
+<p>it takes input from a file.</p>
+                            </div>
+                            <div id="question-tags" class="tags-container tags">
+                            <span class="approved-tags">
+                                
+                                
+                                    <a href="/tags/cosine/" class="post-tag tag-link-cosine "
+                                        title="see questions tagged 'cosine'" rel="tag">cosine</a>
+                                
+                                
+                                
+                                    <a href="/tags/similarity/" class="post-tag tag-link-similarity "
+                                        title="see questions tagged 'similarity'" rel="tag">similarity</a>
+                                
+                                
+                            </span>
+                            <span class="unapproved-tags" title="Unapproved tags">
+                                
+                                
+                                
+                                
+                                
+                            </span>
+                            </div>
+                            <div id="question-controls" class="post-controls">
+                                
+<span class="action-link"><a rel="nofollow" title="" class="    " href="/questions/68063/edit/">edit</a></span><span class="action-link-separator">|</span><span class="action-link"><a rel="nofollow" title="report as offensive (i.e containing spam, advertising, malicious text, etc.)" class="ajax-command withprompt  " href="/flag/68063/">report (0)</a></span><span class="action-link-separator">|</span><span id="node-68063-menu" class="context-menu"><span id="node-68063-menu-trigger" class="action-link context-menu-trigger">more &#9660;</span><ul id="node-68063-menu-dropdown" class="context-menu-dropdown"><li class="item"><a rel="nofollow" class="ajax-command  confirm " href="/wikify/68063/" title="" >mark as community wiki</a></li></ul></span>
+                                
+
+                            </div>
+                            <div class="post-update-info-container">
+                                    
+<div class='post-update-info post-update-info-user'>
+    <p style="line-height:12px;">
+        asked
+        <strong>18 Apr '15, 18:47</strong>
+    </p>
+    <img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="sharru05's gravatar image" />
+    <p><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/71063/sharru05">sharru05</a></span><br/>
+    <span class="score" title="219 reputation points">219</span><span title="5 badges"><span class="bronze">&#9679;</span><span class="badgecount">5</span></span><br />
+    
+    <span title="Rate of the user's accepted answers" class="accept_rate">accept rate:</span>
+    <span title="sharru05 has 4 accepted answers">8&#37;</span>
+    </p>
+</div>
+
+
+                            </div>
+                            
+
+
+<div class="comments-container" id="comments-container-68063">
+    
+</div>
+<div id="comment-tools-68063" class="comment-tools">
+    
+    
+        <a href="#" class="add-comment-link">add new comment</a>
+    
+</div>
+<div id="comment-68063-form-container" class="comment-form-container">
+    
+    <form id="comment-68063-form" method="post" action="/comment/68063/" accept-charset="utf-8">
+        <input type='hidden' name='csrfmiddlewaretoken' value='o2VAN2KftAmxZKlhkyIYAYr7VDfZbdWn' />
+        <div class="comment-form-widgets-container">
+            <textarea name="comment" class="commentBox" id="comment"></textarea>
+            <div class="comment-form-buttons">
+                <span id="comment-68063-chars-left" class="comment-chars-left">
+                    <span class="comments-char-left-count">10|600</span>
+                    <span class="comments-chars-togo-msg">characters needed</span>
+                    <span class="comments-chars-left-msg">characters left</span>
+                </span>
+                <input type="submit" class="comment-submit" value=" comment" />
+                <input type="submit" class="comment-cancel" value=" cancel" />
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+        <script type="text/html" class="new-comment-skeleton" id="new-comment-skeleton-68063">
+            <div class="comment not_top_scorer" id="comment-%ID%">
+                <div id="post-%ID%-score" class="comment-score"></div>
+                <div class="comment-text">%COMMENT%</div>
+                <div class="comment-info" id="comment-%ID%-info">
+                    <a id="comment-%ID%-edit" href="%EDIT_URL%" title="Edit comment"
+                        class="comment-edit" rel="nofollow"> </a>
+                    <a id="comment-%ID%-delete" href="%DELETE_URL%" title="Delete comment"
+                        class="ajax-command comment-delete confirm" rel="nofollow"> </a>
+                    <a rel="nofollow" id="comment-%ID%-convert" style="display:none;" href="%CONVERT_URL%" title="Convert comment to answer"
+                        class="ajax-command comment-convert confirm" rel="nofollow"> </a>
+
+                    <span class="comment-age">(just now)</span>
+                    <a class="comment-user" href="%PROFILE_URL%">%USERNAME%</a>
+                    
+                        
+                    
+                </div>
+             </div>
+        </script>
+    </form>
+    
+</div>
+    
+
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+            
+            
+                <hr/>
+                <div class="tabBar">
+                    <a name="sort-top"></a>
+                    <div class="headQuestions">
+                    2 Answers:
+                    </div>
+                    
+<div class="tabsA"><a href="/questions/68063/cosine-similarity?sort=oldest" title="oldest answers will be shown first">oldest answers</a><a href="/questions/68063/cosine-similarity?sort=newest" title="newest answers will be shown first">newest answers</a><a href="/questions/68063/cosine-similarity?sort=votes" class="on" title="most voted answers will be shown first">popular answers</a></div>
+
+                </div>
+                
+
+                
+                    <a name="68167"></a>
+                    <div id="answer-container-68167" class="answer accepted-answer">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="width:30px;vertical-align:top">
+                                    <div class="vote-buttons">
+                                        
+
+<a id="post-68167-upvote" title="I like this post (click again to cancel)"
+    class="ajax-command post-vote up  on"
+    href="/vote/68167/up/" rel="nofollow"> </a>
+<div id="post-68167-score" class="post-score"
+    title="current number of votes">
+    2
+</div>
+<a id="post-68167-downvote" title="I dont like this post (click again to cancel)"
+    class="ajax-command post-vote down"
+href="/vote/68167/down/" rel="nofollow"> </a>
+                                        
+
+
+    
+      <a class="accept-answer on"
+        title="admin has selected this answer as the correct answer"
+        href="/accept_answer/68167/" rel="nofollow"> 
+      </a>
+    
+
+
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-right">
+                                        
+                                            
+                                                <div class="answer-body">
+                                                    <p>This is answer by Belista
+Lalall
+lala
+la
+la
+la
+la
+la
+la
+la
+la
+la
+la</p>
+                                                </div>
+                                                <div class="answer-controls post-controls">
+                                            
+                                        
+                                            
+<span class="action-link"><a rel="nofollow" title="answer permanent link" class="ajax-command withprompt  copy" href="/answer_link/68167/">link</a></span><span class="action-link-separator">|</span><span class="action-link"><a rel="nofollow" title="award points to betlista" class="ajax-command withprompt  " href="/award_points/user/1169/answer/68167/">award points</a></span><span class="action-link-separator">|</span><span class="action-link"><a rel="nofollow" title="" class="    " href="/answers/68167/edit/">edit</a></span><span class="action-link-separator">|</span><span class="action-link"><a rel="nofollow" title="report as offensive (i.e containing spam, advertising, malicious text, etc.)" class="ajax-command withprompt  " href="/flag/68167/">report (0)</a></span><span class="action-link-separator">|</span><span id="node-68167-menu" class="context-menu"><span id="node-68167-menu-trigger" class="action-link context-menu-trigger">more &#9660;</span><ul id="node-68167-menu-dropdown" class="context-menu-dropdown"><li class="item"><a rel="nofollow" class="ajax-command  confirm " href="/wikify/68167/" title="" >mark as community wiki</a></li></ul></span>
+                                            
+
+                                        </div>
+                                        <div class="post-update-info-container">
+                                            
+<div class='post-update-info post-update-info-user'>
+    <p style="line-height:12px;">
+        answered
+        <strong>23 Jun, 19:17</strong>
+    </p>
+    <img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/09e87f356648d463c75c000a87a57c0c.jpg?s=32&amp;d=identicon&amp;r=g" alt="betlista's gravatar image" />
+    <p><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1169/betlista">betlista</a></span><br/>
+    <span class="score" title="16536 reputation points"><span class="">16.5k</span></span><span title="49 badges"><span class="badge1">&#9679;</span><span class="badgecount">49</span></span><span title="113 badges"><span class="silver">&#9679;</span><span class="badgecount">113</span></span><span title="220 badges"><span class="bronze">&#9679;</span><span class="badgecount">220</span></span><br />
+    
+    <span title="Rate of the user's accepted answers" class="accept_rate">accept rate:</span>
+    <span title="betlista has 90 accepted answers">11&#37;</span>
+    </p>
+</div>
+
+
+                                        </div>
+                                        
+
+
+<div class="comments-container" id="comments-container-68167">
+    
+</div>
+<div id="comment-tools-68167" class="comment-tools">
+    
+    
+        <a href="#" class="add-comment-link">add new comment</a>
+    
+</div>
+<div id="comment-68167-form-container" class="comment-form-container">
+    
+    <form id="comment-68167-form" method="post" action="/comment/68167/" accept-charset="utf-8">
+        <input type='hidden' name='csrfmiddlewaretoken' value='o2VAN2KftAmxZKlhkyIYAYr7VDfZbdWn' />
+        <div class="comment-form-widgets-container">
+            <textarea name="comment" class="commentBox" id="comment"></textarea>
+            <div class="comment-form-buttons">
+                <span id="comment-68167-chars-left" class="comment-chars-left">
+                    <span class="comments-char-left-count">10|600</span>
+                    <span class="comments-chars-togo-msg">characters needed</span>
+                    <span class="comments-chars-left-msg">characters left</span>
+                </span>
+                <input type="submit" class="comment-submit" value=" comment" />
+                <input type="submit" class="comment-cancel" value=" cancel" />
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+        <script type="text/html" class="new-comment-skeleton" id="new-comment-skeleton-68167">
+            <div class="comment not_top_scorer" id="comment-%ID%">
+                <div id="post-%ID%-score" class="comment-score"></div>
+                <div class="comment-text">%COMMENT%</div>
+                <div class="comment-info" id="comment-%ID%-info">
+                    <a id="comment-%ID%-edit" href="%EDIT_URL%" title="Edit comment"
+                        class="comment-edit" rel="nofollow"> </a>
+                    <a id="comment-%ID%-delete" href="%DELETE_URL%" title="Delete comment"
+                        class="ajax-command comment-delete confirm" rel="nofollow"> </a>
+                    <a rel="nofollow" id="comment-%ID%-convert" style="display:none;" href="%CONVERT_URL%" title="Convert comment to answer"
+                        class="ajax-command comment-convert confirm" rel="nofollow"> </a>
+
+                    <span class="comment-age">(just now)</span>
+                    <a class="comment-user" href="%PROFILE_URL%">%USERNAME%</a>
+                    
+                        
+                    
+                </div>
+             </div>
+        </script>
+    </form>
+    
+</div>
+    
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                    <a name="68073"></a>
+                    <div id="answer-container-68073" class="answer ">
+                        <table style="width:100%;">
+                            <tr>
+                                <td style="width:30px;vertical-align:top">
+                                    <div class="vote-buttons">
+                                        
+
+<a id="post-68073-upvote" title="I like this post (click again to cancel)"
+    class="ajax-command post-vote up  on"
+    href="/vote/68073/up/" rel="nofollow"> </a>
+<div id="post-68073-score" class="post-score"
+    title="current number of votes">
+    2
+</div>
+<a id="post-68073-downvote" title="I dont like this post (click again to cancel)"
+    class="ajax-command post-vote down"
+href="/vote/68073/down/" rel="nofollow"> </a>
+                                        
+
+
+    
+
+
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-right">
+                                        
+                                            
+                                                <div class="answer-body">
+                                                    <p>Tutorial copied from</p>
+<p><a href="http://en.wikipedia.org/wiki/Cosine_similarity">Wikipedia</a></p>
+<p>and</p>
+<p><a href="http://stackoverflow.com/questions/1746501/can-someone-give-an-example-of-cosine-similarity-in-very-simple-graphical-way">Stack Overflow</a></p>
+<p>test</p>
+<p>Lalit Chauhan
+kaka
+ka
+la
+ka
+ka
+kakkak
+kak
+kaka
+ka
+ka
+ak
+kaka
+k
+And the code copied from</p>
+<p><a href="http://magnetolab.blogspot.in/2013/11/cosine-similarity-using-c.html">http://magnetolab.blogspot.in/2013/11/cosine-similarity-using-c.html</a></p>
+                                                </div>
+                                                <div class="answer-controls post-controls">
+                                            
+                                        
+                                            
+<span class="action-link"><a rel="nofollow" title="answer permanent link" class="ajax-command withprompt  copy" href="/answer_link/68073/">link</a></span><span class="action-link-separator">|</span><span class="action-link"><a rel="nofollow" title="award points to arun_as" class="ajax-command withprompt  " href="/award_points/user/64784/answer/68073/">award points</a></span><span class="action-link-separator">|</span><span class="action-link"><a rel="nofollow" title="" class="    " href="/answers/68073/edit/">edit</a></span><span class="action-link-separator">|</span><span class="action-link"><a rel="nofollow" title="report as offensive (i.e containing spam, advertising, malicious text, etc.)" class="ajax-command withprompt  " href="/flag/68073/">report (0)</a></span><span class="action-link-separator">|</span><span id="node-68073-menu" class="context-menu"><span id="node-68073-menu-trigger" class="action-link context-menu-trigger">more &#9660;</span><ul id="node-68073-menu-dropdown" class="context-menu-dropdown"><li class="item"><a rel="nofollow" class="ajax-command  confirm " href="/wikify/68073/" title="" >mark as community wiki</a></li><li class="item"><a rel="nofollow" class="ajax-command withprompt  " href="/convert/68073/" title="" >convert to comment</a></li><li class="item"><a rel="nofollow" class="   confirm " href="/convert_to_question/68073/" title="" >convert to question</a></li></ul></span>
+                                            
+
+                                        </div>
+                                        <div class="post-update-info-container">
+                                            
+<div class='post-update-info post-update-info-user'>
+    <p style="line-height:12px;">
+        answered
+        <strong>18 Apr '15, 22:57</strong>
+    </p>
+    <img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="arun_as's gravatar image" />
+    <p><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/64784/arun_as">arun_as</a></span><br/>
+    <span class="score" title="638 reputation points">638</span><span title="1 badges"><span class="badge1">&#9679;</span><span class="badgecount">1</span></span><span title="4 badges"><span class="silver">&#9679;</span><span class="badgecount">4</span></span><span title="15 badges"><span class="bronze">&#9679;</span><span class="badgecount">15</span></span><br />
+    
+    <span title="Rate of the user's accepted answers" class="accept_rate">accept rate:</span>
+    <span title="arun_as has 6 accepted answers">6&#37;</span>
+    </p>
+</div>
+
+    <div class='post-update-info post-update-info-edited'>
+        <p style="line-height:12px;">
+            <a href="/revisions/68073/">
+                edited
+                <strong>23 Jun, 19:12</strong>
+            </a>
+        </p>
+        
+            <img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="kuruma's gravatar image" />
+            <p><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/2057/kuruma">kuruma ♦♦</a></span><br/>
+            <span class="score" title="16364 reputation points"><span class="">16.4k</span></span><span title="72 badges"><span class="badge1">&#9679;</span><span class="badgecount">72</span></span><span title="143 badges"><span class="silver">&#9679;</span><span class="badgecount">143</span></span><span title="208 badges"><span class="bronze">&#9679;</span><span class="badgecount">208</span></span></p>
+        
+    </div>
+
+
+                                        </div>
+                                        
+
+
+<div class="comments-container" id="comments-container-68073">
+    
+        <a name="68143"></a>
+        <div class="comment" id="comment-68143">
+            <div id="post-68143-score" class="comment-score"></div>
+            <div class="comment-text"><p>And what is wron in doing that?</p></div>
+            <div class="comment-info" id="comment-68143-info">
+                
+                    <a id="post-68143-upvote" href="/like_comment/68143/"
+                     title="I like this comment (click again to cancel)" class="ajax-command comment-like"
+                    rel="nofollow"> </a>
+                
+                
+                
+                    <a id="comment-68143-delete" href="/delete_comment/68143/" title="Delete comment"
+                        class="ajax-command comment-delete confirm" rel="nofollow"> </a>
+                
+                
+                    <a rel="nofollow" id="comment-68143-convert" href="/convert_comment/68143/" title="Convert comment to answer"
+                        class="ajax-command comment-convert confirm" rel="nofollow"> </a>
+                    <a rel="nofollow" id="comment-68143-convert-to-question" href="/convert_to_question/68143/?node_type=comment" title="Convert comment to question"
+                        class="comment-convert-to-question" rel="nofollow"> </a>
+                
+                    
+
+                <span class="comment-age">(20 Apr '15, 18:00)</span>
+                <span class='user-rating user-rating-0'><a class="comment-user userinfo" href="/users/71063/sharru05">sharru05</a><span>0&#9733;</span></span>
+                
+            </div>
+        </div>
+    
+        <a name="68145"></a>
+        <div class="comment" id="comment-68145">
+            <div id="post-68145-score" class="comment-score"></div>
+            <div class="comment-text"><p><a href="/users/64784/arun_as"></a><a href="/users/64784/arun_as">@arun_as</a> As long as it is helpful,i won't mind even if it is copied.</p></div>
+            <div class="comment-info" id="comment-68145-info">
+                
+                    <a id="post-68145-upvote" href="/like_comment/68145/"
+                     title="I like this comment (click again to cancel)" class="ajax-command comment-like"
+                    rel="nofollow"> </a>
+                
+                
+                
+                    <a id="comment-68145-delete" href="/delete_comment/68145/" title="Delete comment"
+                        class="ajax-command comment-delete confirm" rel="nofollow"> </a>
+                
+                
+                    <a rel="nofollow" id="comment-68145-convert" href="/convert_comment/68145/" title="Convert comment to answer"
+                        class="ajax-command comment-convert confirm" rel="nofollow"> </a>
+                    <a rel="nofollow" id="comment-68145-convert-to-question" href="/convert_to_question/68145/?node_type=comment" title="Convert comment to question"
+                        class="comment-convert-to-question" rel="nofollow"> </a>
+                
+                    
+
+                <span class="comment-age">(20 Apr '15, 18:30)</span>
+                <span class='user-rating user-rating-0'><a class="comment-user userinfo" href="/users/82188/doodle90">doodle90</a><span>0&#9733;</span></span>
+                
+            </div>
+        </div>
+    
+</div>
+<div id="comment-tools-68073" class="comment-tools">
+    
+    
+        <a href="#" class="add-comment-link">add new comment</a>
+    
+</div>
+<div id="comment-68073-form-container" class="comment-form-container">
+    
+    <form id="comment-68073-form" method="post" action="/comment/68073/" accept-charset="utf-8">
+        <input type='hidden' name='csrfmiddlewaretoken' value='o2VAN2KftAmxZKlhkyIYAYr7VDfZbdWn' />
+        <div class="comment-form-widgets-container">
+            <textarea name="comment" class="commentBox" id="comment"></textarea>
+            <div class="comment-form-buttons">
+                <span id="comment-68073-chars-left" class="comment-chars-left">
+                    <span class="comments-char-left-count">10|600</span>
+                    <span class="comments-chars-togo-msg">characters needed</span>
+                    <span class="comments-chars-left-msg">characters left</span>
+                </span>
+                <input type="submit" class="comment-submit" value=" comment" />
+                <input type="submit" class="comment-cancel" value=" cancel" />
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+        <script type="text/html" class="new-comment-skeleton" id="new-comment-skeleton-68073">
+            <div class="comment not_top_scorer" id="comment-%ID%">
+                <div id="post-%ID%-score" class="comment-score"></div>
+                <div class="comment-text">%COMMENT%</div>
+                <div class="comment-info" id="comment-%ID%-info">
+                    <a id="comment-%ID%-edit" href="%EDIT_URL%" title="Edit comment"
+                        class="comment-edit" rel="nofollow"> </a>
+                    <a id="comment-%ID%-delete" href="%DELETE_URL%" title="Delete comment"
+                        class="ajax-command comment-delete confirm" rel="nofollow"> </a>
+                    <a rel="nofollow" id="comment-%ID%-convert" style="display:none;" href="%CONVERT_URL%" title="Convert comment to answer"
+                        class="ajax-command comment-convert confirm" rel="nofollow"> </a>
+
+                    <span class="comment-age">(just now)</span>
+                    <a class="comment-user" href="%PROFILE_URL%">%USERNAME%</a>
+                    
+                        
+                    
+                </div>
+             </div>
+        </script>
+    </form>
+    
+</div>
+    
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                <div class="paginator-container-left">
+                    
+                </div>
+            
+        <form id="fmanswer" action="/questions/68063/answer/" method="post">
+            <input type='hidden' name='csrfmiddlewaretoken' value='o2VAN2KftAmxZKlhkyIYAYr7VDfZbdWn' />
+            <div style="clear:both">
+            </div>
+
+            
+                <div style="padding:10px 0 0 0;">
+                    <div class="headNormal">
+                        
+                            Your answer
+                        
+                    </div>
+                </div>
+                
+
+                <div id="description" class="" >
+                    <div id="wmd-button-bar" class="wmd-panel"></div>
+                    <textarea cols="40" id="editor" name="text" rows="10">
+</textarea>
+                    <div class="preview-toggle">
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <span id="pre-collapse"
+                                        title="Toggle the real time Markdown editor preview">
+                                            toggle preview
+                                    </span>
+                                </td>
+                                <td style="text-align: right;" id="editor-metrics"></td>
+                                
+                                <td style="text-align:right;">
+                                    <input id="id_wiki" name="wiki" type="checkbox" />
+                                    <span style="font-weight:normal;cursor:help"
+                                        title="if you choose community wiki option, the question and answer do not generate points and name of author will not be shown">
+                                            <label for="id_wiki">community wiki:</label>
+                                    </span>
+                                </td>
+                                
+                            </tr>
+
+                        </table>
+                    </div>
+                    
+                    <div class="wmd-preview-text">Preview</div>
+                    <div id="previewer" class="wmd-preview"></div>
+                </div>
+
+	            
+
+                <p><span class="form-error"></span></p>
+                
+                <input type="button"
+                    
+                        
+                        value="Answer the question"
+                        
+                    
+                    class="submit" style="float:left" onclick="submitClicked(event, this.form)"/>
+            
+        </form>
+    </div>
+</div>
+
+
+        </div>
+        <div id="CARight">
+            
+<div class="boxC" id="subscription_box">
+    <h3 class="subtitle">Follow this question</h3><strong>By Email:</strong><div class="subscription-status"><p>You are not subscribed to this question.</p></div><p><a class="ajax-command sidebar_button subscription_switch" href="/subscribe/68063/">
+        
+            subscribe me
+        
+    </a></p><p>
+        
+            (you can adjust your notification settings on your <a href="/users/46655/lalitc375/subscriptions/">profile</a>)
+        
+    </p><strong>By RSS:</strong><p><a class="feed-icon" style="background-image:url('/m/default/media/images/feed-icon-small.png');"
+        href="/questions/68063/cosine-similarity?type=rss" title="subscribe to answers"></a>
+    Answers
+</p><p><a class="feed-icon" style="background-image:url('/m/default/media/images/feed-icon-small.png');"
+        href="/questions/68063/cosine-similarity?type=rss&comments=yes" title="subscribe to comments and answers"></a>
+    Answers and Comments
+</p>
+
+</div>
+
+
+<div class="boxC" id="editor_side_bar">
+    <p class="subtitle darkred">Markdown Basics</p>
+    <ul class="list-item">
+        <li>
+            *italic* or _italic_
+        </li>
+        <li>
+			**bold** or __bold__
+        </li>
+        <li>
+            <b>link</b>:[text](http://url.com/ "title")
+
+        </li>
+
+        <li>
+            <b>image</b>?![alt text](/path/img.jpg "title")
+
+        </li>
+        <li>
+			numbered list:
+            1.  Foo
+            2.  Bar
+        </li>
+        <li>
+			to add a line break simply add two spaces to where you would like the new line to be.
+        </li>
+        <li>
+			basic HTML tags are also supported
+        </li>
+        <li>
+			mathemetical formulas in Latex between $ symbol
+        </li>
+    </ul>
+    <p class='info-box-follow-up-links'>
+        <a href="/markdown_help/" target="_blank">learn more about Markdown </a>
+    </p>
+</div>
+
+
+
+
+
+
+
+
+<div class="boxC">
+    <p>
+		Question tags:
+    </p>
+    <p class="tags" >
+        
+        	<a href="/tags/cosine/"
+            class="tag-link-cosine"
+			title="see questions tagged'cosine'using tags"
+			rel="tag">cosine</a> <span class="tag-number">&#215;2</span><br/>
+        
+        	<a href="/tags/similarity/"
+            class="tag-link-similarity"
+			title="see questions tagged'similarity'using tags"
+			rel="tag">similarity</a> <span class="tag-number">&#215;2</span><br/>
+        
+    </p>
+    <p>
+        question asked: <strong title="April 18, 2015, 6:47 p.m.">18 Apr '15, 18:47</strong>
+    </p>
+    <p>
+     	question was seen: <strong>74 times</strong>
+    </p>
+    <p>
+        last updated: <strong title="June 23, 2017, 7:17 p.m.">23 Jun, 19:17</strong>
+    </p>
+</div>
+
+
+
+
+
+<div class="boxC">
+    <h3 class="subtitle">Related questions</h3>
+    <div class="questions-related">
+
+        
+
+    </div>
+</div>
+
+
+
+        </div>
+        <div id="tail" style="clear:both;">
+            
+            
+        </div>
+    </div>
+    <div class="spacer3"></div>
+</div>
+
+        
+            
+            <div id="ground">
+                
+                    <p><html>
+<head>
+<link rel="stylesheet" type="text/css" href="/m/default/media/style/cc.css">
+</head></p>
+<div id="cc-footer" class="cc-wrapper">
+    <div class="cc-inner-wrapper">
+        <!-- SECOND NAV -->
+        <div class="cc-cols-2">
+            <div id="cc-secondary-nav">
+                <ul>
+                    <!-- <li><a href="http://blog.corp.pw/" target="_blank">.pw Corp Blog</a></li>
+                    <li><a href="http://start.pw/" target="_blank">Vision</li> -->
+                    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+                    <li><a href="http://www.directi.com/" target="_blank">About Directi</a></li>
+                    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+                    <!-- <li><a href="http://wiki.directi.com/" target="_blank">Wiki</a></li>
+                    <li><a href="http://wiki.directi.com/display/corp/Home" target="_blank">About</a></li> -->
+                </ul>
+                <ul>
+                    <li><a href="http://www.codechef.com/campus/">CodeChef Campus Chapters</a></li>
+                    <li><a href="http://www.codechef.com/school/">CodeChef For Schools</a></li>
+                    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="cc-fineprint">
+                <p>© 2009, Directi Group. All Rights Reserved.</p>
+                <p><small>Powered by OSQA<br> </small></p>
+            </div>
+        </div>
+        <!-- /SECOND NAV -->
+        <!-- LEGAL & COPYRIGHT -->
+        <div>
+            <div id="cc-sponsor-strip">
+                <a href="http://www.directi.com" target="_blank"><img src="/m/default/media/images/footer-sponsor-strip.gif" alt="Sponsors" title="Sponsors"></a>
+            </div>
+        </div>
+        <!-- /LEGAL & COPYRIGHT -->
+    </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4090524-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Start Alexa Certify Javascript -->
+
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"q16Cj1a8gN00iz", domain:"codechef.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz" style="display:none" height="1" width="1" alt="" /></noscript>
+
+<!-- End Alexa Certify Javascript -->
+                
+            </div>
+            
+        
+        
+
+        
+        </div>
+
+        <!-- Put all elements with fixed position here, IE6 fixed position fix: http://ryanfait.com/position-fixed-ie6/ -->
+        <div class="notify" style="display:none">
+            
+                
+            
+            <a id="close-notify" onclick="notify.close(true)">&#215;</a>
+        </div>
+
+    
+<link rel="stylesheet" href="/static/debug_toolbar/css/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/static/debug_toolbar/css/toolbar.css" type="text/css" />
+
+<!-- Prevent our copy of jQuery from registering as an AMD module on sites that use RequireJS. -->
+<script src="/static/debug_toolbar/js/jquery_pre.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/static/debug_toolbar/js/jquery_post.js"></script>
+
+<script src="/static/debug_toolbar/js/toolbar.js"></script>
+<div id="djDebug" class="djdt-hidden" dir="ltr"
+     data-store-id="e7a6370aa89a4d37887d5d9eb59a37aa" data-render-panel-url="/debug/render_panel/"
+     >
+	<div class="djdt-hidden" id="djDebugToolbar">
+		<ul id="djDebugPanelList">
+			
+			<li><a id="djHideToolBarButton" href="#" title="Hide toolbar">Hide &#187;</a></li>
+			
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtVersionsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Versions" class="VersionsPanel">
+					
+					Versions
+					
+					
+						<br /><small>Django 1.8</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTimerPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Time" class="TimerPanel">
+					
+					Time
+					
+					
+						<br /><small>CPU: 3520.00ms (3637.98ms)</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSettingsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Settings from &lt;code&gt;settings&lt;/code&gt;" class="SettingsPanel">
+					
+					Settings
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtHeadersPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Headers" class="HeadersPanel">
+					
+					Headers
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRequestPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Request" class="RequestPanel">
+					
+					Request
+					
+					
+						<br /><small>question</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSQLPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="SQL queries from 1 connection" class="SQLPanel">
+					
+					SQL
+					
+					
+						<br /><small>55 queries in 42.31ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtStaticFilesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Static files (79 found, 0 used)" class="StaticFilesPanel">
+					
+					Static files
+					
+					
+						<br /><small>0 files used</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTemplatesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Templates (30 rendered)" class="TemplatesPanel">
+					
+					Templates
+					
+					
+						<br /><small>paginator/sort_tabs.html</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtCachePanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Cache calls from 1 backend" class="CachePanel">
+					
+					Cache
+					
+					
+						<br /><small>118 calls in 227.05ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSignalsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Signals" class="SignalsPanel">
+					
+					Signals
+					
+					
+						<br /><small>17 receivers of 12 signals</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtLoggingPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Log messages" class="LoggingPanel">
+					
+					Logging
+					
+					
+						<br /><small>0 messages</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRedirectsPanel" title="Enable for next and successive requests" />
+					
+						<div class="djdt-contentless djdt-disabled">
+					
+					Intercept redirects
+					
+					
+						</div>
+					
+				</li>
+			
+		</ul>
+	</div>
+	<div class="djdt-hidden" id="djDebugToolbarHandle">
+		<span title="Show toolbar" id="djShowToolBarButton">&#171;</span>
+	</div>
+	
+		
+			<div id="VersionsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Versions</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TimerPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Time</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SettingsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Settings from <code>settings</code></h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="HeadersPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Headers</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="RequestPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Request</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SQLPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>SQL queries from 1 connection</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="StaticFilesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Static files (79 found, 0 used)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TemplatesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Templates (30 rendered)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="CachePanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Cache calls from 1 backend</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SignalsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Signals</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="LoggingPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Log messages</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+	
+	<div id="djDebugWindow" class="djdt-panelContent"></div>
+</div>
+</body>
+</html>
+<!-- end template base_content.html -->

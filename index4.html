@@ -1,0 +1,1012 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- base_content.html -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Users - CodeChef Discuss</title>
+        <meta name="description" content="Ask and answer questions." />
+        <meta name="keywords" content="codechef,programming,contest,discuss,forum,community" />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <link rel="shortcut icon" href="/upfiles/favicon_1.ico" />
+        <link href="/m/default/media/style/style.css" rel="stylesheet" type="text/css" />
+        
+        <link href="/m/default/media/style/custom.css?q=star_system" rel="stylesheet" type="text/css" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Top contributors of Discuss" />
+        <meta property="og:description"        content="Top contributors of Discuss" />
+        <meta property="og:image"              content="https://s3.amazonaws.com/codechef_shared/misc/fb-image-icon.png" />
+        <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.js" />
+        <!--[if IE 6]>
+
+        <style type="text/css">
+        img, div, a { behavior: url(/m/default/media/iepngfix/iepngfix.htc) }
+        </style>
+        <![endif]-->
+        
+
+        <script src="//www.google.com/jsapi" type="text/javascript"></script>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+            google.load("jquery", "1.4.2");
+            google.load("jqueryui", "1", {autoload:true});
+
+            var i18nLang = 'en';
+            var appUrl = 'http://discusstest.codechef.com/'
+            var scriptUrl = '/'
+            var osqaSkin = 'default';
+
+            var messages = {
+                username: 'lalitc375',
+                confirm: "Are you sure?",
+                yes: "Yes",
+                no: "No",
+                message: "Message:",
+                cancel: "Cancel",
+                close: "Close",
+                ok: "Ok",
+                matching_tags_url: "/matching_tags/",
+                word: "word",
+                words: "words",
+                character: "character",
+                characters: "characters"
+            }
+        /*]]>*/
+        </script>
+        <script type="text/javascript" src="/m/default/media/js/osqa.main.js?rv=318"></script>
+        
+        
+        
+        
+       <script type="text/javascript">
+	   //todo move javascript out
+        $().ready(function(){
+            $("#type-user").attr('checked',true);
+            var orderby = "";
+            $("#sort_" + orderby).attr('className',"on");
+            
+            Hilite.exact = false;
+            Hilite.elementid = "main-body";
+            Hilite.debug_referrer = location.href;
+        });
+        </script>
+
+        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="CodeChef Discuss Search" />
+        
+    </head>
+    <body>
+        <div class="wrapper">
+        
+        <!-- template header.html -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<style>
+.MathJax {
+    font-size: 2em;
+}
+</style>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        initSearchBoxValue();
+    });
+
+    MathJax.Hub.Config({
+        "tex2jax": {
+            inlineMath: [['$', '$']],
+            multiLine: true
+        }
+    });
+
+    function initSearchBoxValue()
+    {
+        var searchKeyword= $("#keywords").val();
+            if (searchKeyword=="")
+            {
+                $("#keywords").val("Search Here...");
+            }
+   }
+
+    function searchBoxOnBlur(){
+        $("#keyword").className="searchInput";
+        if ($("#keywords").val()=="")
+                $("#keywords").val("Search Here...");
+    }
+
+    function searchBoxOnFocus(){
+        $("#keyword").className="searchInputFocused";
+        if ($("#keywords").val()=="Search Here...")
+            $("#keywords").val("");
+   }
+
+    function about(){
+        if (document.URL=="http://osqa.codechef.local/about/")
+        {
+            $("")
+        }
+    }
+
+</script>
+
+
+
+ 
+
+	<div id="roof">
+
+
+
+		<div id="top" style="position:absolute; text-align: left;">
+            <a href="https://www.codechef.com/">
+                << Back to CodeChef
+            </a>
+		</div>
+
+		<div id="logo">
+			<a href="/">
+				<img src="/upfiles/site-logo_21.png" title="back to home page" alt="CodeChef Discuss logo"/>
+			</a>
+		</div>
+
+		<div id="top">
+		     <a href="/users/46655/lalitc375" >lalitc375</a> <span class="score" title="2001 reputation points"><span class="">2.0k</span></span><span title="1 badges"><span class="bronze">&#9679;</span><span class="badgecount">1</span></span> <a href="/logout/" >Log Out</a> 
+
+            <div id="nav">
+                <a id="nav_questions" href="/questions/" >questions</a><a id="nav_tags" href="/tags/" >tags</a><a id="nav_users" class="on" href="/users/" >users</a><a id="nav_badges" href="/badges/" >badges</a><a id="nav_unanswered" href="/questions/unanswered/" >unanswered</a>
+                <a id="horiSeparator"/>
+                <a id="nav_ask" href="/questions/ask/" class="special">ask a question</a>
+                <a id="nav_about" href="/about" class="off" onclick="about()" >about</a>
+                <a id="nav_faq" href="/faq">faq</a>
+
+            </div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="clear"></div>
+	<div id="searchBar">
+
+
+
+
+        <table id="searchBarTable">
+            <tr>
+                <td class="left">
+                    CodeChef Discussion
+                </td>
+                <td class="right">
+                    <form action="/search/" method="get">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='74wZpzAE6U1oWLviFaMHVGqpnNo7gxk0' />
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" class="searchInput" value="" name="q" id="keywords" onfocus="searchBoxOnFocus()" onblur="searchBoxOnBlur()"/>
+                                </td>
+                                <td>
+                                    <div class="options">
+                                        <input id="type-question" type="radio" value="question" name="t" 
+                                            checked="checked" /><label for="type-question">questions</label>
+                                        <input id="type-tag" type="radio" value="tag" name="t" /><label for="type-tag">tags</label>
+                                        <input id="type-user" type="radio" value="user" name="t" /><label for="type-user">users</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <h1 id="separator">
+        </h1>
+	</div>
+
+
+	
+
+<!-- end template header.html -->
+
+        
+        <div id="wrapper">
+            <div id="room">
+                <div id="CAFull">
+                    
+<div class="tabBar">
+    <div class="headUsers">Users</div>
+    
+<div class="tabsA"><a href="/users/?sort=reputation" class="on" title="sorted by reputation">reputation</a><a href="/users/?sort=newest" title="newest members">recent</a><a href="/users/?sort=last" title="oldest members">oldest</a><a href="/users/?sort=name" title="sorted by username">by username</a></div>
+
+</div>
+<div id="main-body" style="width:100%">
+    <p>        
+        
+    
+        
+    </p>
+    <div class="userList">
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/1169/betlista "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/09e87f356648d463c75c000a87a57c0c.jpg?s=32&amp;d=identicon&amp;r=g" alt="betlista's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1169/betlista">betlista</a></span></li>
+                <li><span class="score" title="16536 reputation points"><span class="">16.5k</span></span><span title="49 badges"><span class="badge1">&#9679;</span><span class="badgecount">49</span></span><span title="113 badges"><span class="silver">&#9679;</span><span class="badgecount">113</span></span><span title="220 badges"><span class="bronze">&#9679;</span><span class="badgecount">220</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/2057/kuruma "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="kuruma's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/2057/kuruma">kuruma ♦♦</a></span></li>
+                <li><span class="score" title="16364 reputation points"><span class="">16.4k</span></span><span title="72 badges"><span class="badge1">&#9679;</span><span class="badgecount">72</span></span><span title="143 badges"><span class="silver">&#9679;</span><span class="badgecount">143</span></span><span title="208 badges"><span class="bronze">&#9679;</span><span class="badgecount">208</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/1/admin "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/a3078e9eb180b421790287710b1bb840.jpg?s=32&amp;d=identicon&amp;r=g" alt="admin's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1/admin">admin ♦♦</a></span></li>
+                <li><span class="score" title="10752 reputation points"><span class="">10.8k</span></span><span title="346 badges"><span class="badge1">&#9679;</span><span class="badgecount">346</span></span><span title="472 badges"><span class="silver">&#9679;</span><span class="badgecount">472</span></span><span title="486 badges"><span class="bronze">&#9679;</span><span class="badgecount">486</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/16057/kcahdog "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/27e3477b5efa3782a890e30e0137acea.jpg?s=32&amp;d=identicon&amp;r=g" alt="kcahdog's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/16057/kcahdog">kcahdog</a></span></li>
+                <li><span class="score" title="9866 reputation points"><span class="">9.9k</span></span><span title="28 badges"><span class="badge1">&#9679;</span><span class="badgecount">28</span></span><span title="54 badges"><span class="silver">&#9679;</span><span class="badgecount">54</span></span><span title="129 badges"><span class="bronze">&#9679;</span><span class="badgecount">129</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/7523/mugurelionut "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="mugurelionut's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/7523/mugurelionut">mugurelionut</a></span></li>
+                <li><span class="score" title="9160 reputation points"><span class="">9.2k</span></span><span title="26 badges"><span class="badge1">&#9679;</span><span class="badgecount">26</span></span><span title="64 badges"><span class="silver">&#9679;</span><span class="badgecount">64</span></span><span title="75 badges"><span class="bronze">&#9679;</span><span class="badgecount">75</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/7672/bugkiller "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/e6aaa4078aad82cc5c70026cb3784338.jpg?s=32&amp;d=identicon&amp;r=g" alt="bugkiller's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/7672/bugkiller">bugkiller</a></span></li>
+                <li><span class="score" title="8470 reputation points"><span class="">8.5k</span></span><span title="19 badges"><span class="badge1">&#9679;</span><span class="badgecount">19</span></span><span title="48 badges"><span class="silver">&#9679;</span><span class="badgecount">48</span></span><span title="98 badges"><span class="bronze">&#9679;</span><span class="badgecount">98</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/29065/neo1tech9_7 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="neo1tech9_7's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/29065/neo1tech9_7">neo1tech9_7</a></span></li>
+                <li><span class="score" title="8351 reputation points"><span class="">8.4k</span></span><span title="5 badges"><span class="badge1">&#9679;</span><span class="badgecount">5</span></span><span title="15 badges"><span class="silver">&#9679;</span><span class="badgecount">15</span></span><span title="36 badges"><span class="bronze">&#9679;</span><span class="badgecount">36</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/2962/anton_lunyov "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="anton_lunyov's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/2962/anton_lunyov">anton_lunyov ♦♦</a></span></li>
+                <li><span class="score" title="6535 reputation points"><span class="">6.5k</span></span><span title="62 badges"><span class="badge1">&#9679;</span><span class="badgecount">62</span></span><span title="119 badges"><span class="silver">&#9679;</span><span class="badgecount">119</span></span><span title="138 badges"><span class="bronze">&#9679;</span><span class="badgecount">138</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/12320/kunal361 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/5eeaf32f780a6a6050ec78d543f10acc.jpg?s=32&amp;d=identicon&amp;r=g" alt="kunal361's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/12320/kunal361">kunal361</a></span></li>
+                <li><span class="score" title="5847 reputation points"><span class="">5.8k</span></span><span title="13 badges"><span class="badge1">&#9679;</span><span class="badgecount">13</span></span><span title="32 badges"><span class="silver">&#9679;</span><span class="badgecount">32</span></span><span title="72 badges"><span class="bronze">&#9679;</span><span class="badgecount">72</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/2760/bit_cracker007 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="bit_cracker007's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/2760/bit_cracker007">bit_cracker007</a></span></li>
+                <li><span class="score" title="5639 reputation points"><span class="">5.6k</span></span><span title="26 badges"><span class="badge1">&#9679;</span><span class="badgecount">26</span></span><span title="68 badges"><span class="silver">&#9679;</span><span class="badgecount">68</span></span><span title="68 badges"><span class="bronze">&#9679;</span><span class="badgecount">68</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/2926/tijoforyou "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/d7981bdf7be8f7a1cb672bddafa5f031.jpg?s=32&amp;d=identicon&amp;r=g" alt="tijoforyou's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/2926/tijoforyou">tijoforyou</a></span></li>
+                <li><span class="score" title="4095 reputation points"><span class="">4.1k</span></span><span title="5 badges"><span class="badge1">&#9679;</span><span class="badgecount">5</span></span><span title="23 badges"><span class="silver">&#9679;</span><span class="badgecount">23</span></span><span title="64 badges"><span class="bronze">&#9679;</span><span class="badgecount">64</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/11746/xellos0 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="xellos0's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/11746/xellos0">xellos0</a></span></li>
+                <li><span class="score" title="3935 reputation points"><span class="">3.9k</span></span><span title="5 badges"><span class="badge1">&#9679;</span><span class="badgecount">5</span></span><span title="28 badges"><span class="silver">&#9679;</span><span class="badgecount">28</span></span><span title="51 badges"><span class="bronze">&#9679;</span><span class="badgecount">51</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/51/ritesh_gupta "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/72d071312f3eddc68c22d3d715579086.jpg?s=32&amp;d=identicon&amp;r=g" alt="ritesh_gupta's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/51/ritesh_gupta">ritesh_gupta ♦</a></span></li>
+                <li><span class="score" title="3586 reputation points"><span class="">3.6k</span></span><span title="4 badges"><span class="badge1">&#9679;</span><span class="badgecount">4</span></span><span title="25 badges"><span class="silver">&#9679;</span><span class="badgecount">25</span></span><span title="49 badges"><span class="bronze">&#9679;</span><span class="badgecount">49</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/4534/chandan11111 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="chandan11111's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/4534/chandan11111">chandan11111</a></span></li>
+                <li><span class="score" title="3575 reputation points"><span class="">3.6k</span></span><span title="13 badges"><span class="badge1">&#9679;</span><span class="badgecount">13</span></span><span title="35 badges"><span class="silver">&#9679;</span><span class="badgecount">35</span></span><span title="55 badges"><span class="bronze">&#9679;</span><span class="badgecount">55</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/2441/vinayak-garg "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="vinayak%20garg's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/2441/vinayak-garg">vinayak garg</a></span></li>
+                <li><span class="score" title="3536 reputation points"><span class="">3.5k</span></span><span title="11 badges"><span class="badge1">&#9679;</span><span class="badgecount">11</span></span><span title="32 badges"><span class="silver">&#9679;</span><span class="badgecount">32</span></span><span title="49 badges"><span class="bronze">&#9679;</span><span class="badgecount">49</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/12/cyberax "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="cyberax's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/12/cyberax">cyberax ♦♦</a></span></li>
+                <li><span class="score" title="3358 reputation points"><span class="">3.4k</span></span><span title="2 badges"><span class="badge1">&#9679;</span><span class="badgecount">2</span></span><span title="19 badges"><span class="silver">&#9679;</span><span class="badgecount">19</span></span><span title="55 badges"><span class="bronze">&#9679;</span><span class="badgecount">55</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/18165/wittyceaser "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="wittyceaser's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/18165/wittyceaser">wittyceaser</a></span></li>
+                <li><span class="score" title="3261 reputation points"><span class="">3.3k</span></span><span title="19 badges"><span class="badge1">&#9679;</span><span class="badgecount">19</span></span><span title="42 badges"><span class="silver">&#9679;</span><span class="badgecount">42</span></span><span title="69 badges"><span class="bronze">&#9679;</span><span class="badgecount">69</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/8216/junior94 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="junior94's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/8216/junior94">junior94</a></span></li>
+                <li><span class="score" title="3101 reputation points"><span class="">3.1k</span></span><span title="14 badges"><span class="badge1">&#9679;</span><span class="badgecount">14</span></span><span title="30 badges"><span class="silver">&#9679;</span><span class="badgecount">30</span></span><span title="56 badges"><span class="bronze">&#9679;</span><span class="badgecount">56</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/24769/bipin2 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/7fbeb818fee56d83a89ed7eeafb0b104.JPG?s=32&amp;d=identicon&amp;r=g" alt="bipin2's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/24769/bipin2">bipin2</a></span></li>
+                <li><span class="score" title="2983 reputation points"><span class="">3.0k</span></span><span title="25 badges"><span class="badge1">&#9679;</span><span class="badgecount">25</span></span><span title="45 badges"><span class="silver">&#9679;</span><span class="badgecount">45</span></span><span title="70 badges"><span class="bronze">&#9679;</span><span class="badgecount">70</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/71626/topcoder_7 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/f855b8f163b0c51fa0cd418fa9f96126.jpeg?s=32&amp;d=identicon&amp;r=g" alt="topcoder_7's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/71626/topcoder_7">topcoder_7</a></span></li>
+                <li><span class="score" title="2866 reputation points"><span class="">2.9k</span></span><span title="31 badges"><span class="silver">&#9679;</span><span class="badgecount">31</span></span><span title="53 badges"><span class="bronze">&#9679;</span><span class="badgecount">53</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/16074/darkshadows "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="darkshadows's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/16074/darkshadows">darkshadows ♦♦</a></span></li>
+                <li><span class="score" title="2859 reputation points"><span class="">2.9k</span></span><span title="88 badges"><span class="badge1">&#9679;</span><span class="badgecount">88</span></span><span title="131 badges"><span class="silver">&#9679;</span><span class="badgecount">131</span></span><span title="147 badges"><span class="bronze">&#9679;</span><span class="badgecount">147</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/13930/sobhagya "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/5504e0db7d4c05b225f48068b0fe7de1.jpg?s=32&amp;d=identicon&amp;r=g" alt="sobhagya's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/13930/sobhagya">sobhagya</a></span></li>
+                <li><span class="score" title="2636 reputation points"><span class="">2.6k</span></span><span title="13 badges"><span class="badge1">&#9679;</span><span class="badgecount">13</span></span><span title="27 badges"><span class="silver">&#9679;</span><span class="badgecount">27</span></span><span title="47 badges"><span class="bronze">&#9679;</span><span class="badgecount">47</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/11718/devanshug "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/88ea28a60d5f81941b5cded71a9cedcd.jpg?s=32&amp;d=identicon&amp;r=g" alt="devanshug's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/11718/devanshug">devanshug</a></span></li>
+                <li><span class="score" title="2616 reputation points"><span class="">2.6k</span></span><span title="11 badges"><span class="badge1">&#9679;</span><span class="badgecount">11</span></span><span title="19 badges"><span class="silver">&#9679;</span><span class="badgecount">19</span></span><span title="27 badges"><span class="bronze">&#9679;</span><span class="badgecount">27</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/40924/damn_me "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="damn_me's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/40924/damn_me">damn_me</a></span></li>
+                <li><span class="score" title="2435 reputation points"><span class="">2.4k</span></span><span title="2 badges"><span class="badge1">&#9679;</span><span class="badgecount">2</span></span><span title="11 badges"><span class="silver">&#9679;</span><span class="badgecount">11</span></span><span title="32 badges"><span class="bronze">&#9679;</span><span class="badgecount">32</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/13206/maheiitr "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/7c7c6e60855c66d242a23c7a5b46d92a.jpg?s=32&amp;d=identicon&amp;r=g" alt="maheiitr's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/13206/maheiitr">maheiitr ♦</a></span></li>
+                <li><span class="score" title="2430 reputation points"><span class="">2.4k</span></span><span title="16 badges"><span class="badge1">&#9679;</span><span class="badgecount">16</span></span><span title="23 badges"><span class="silver">&#9679;</span><span class="badgecount">23</span></span><span title="24 badges"><span class="bronze">&#9679;</span><span class="badgecount">24</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/7269/upendra1234 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/6face213180eb93b5516d0bce49372fa.jpg?s=32&amp;d=identicon&amp;r=g" alt="upendra1234's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/7269/upendra1234">upendra1234</a></span></li>
+                <li><span class="score" title="2268 reputation points"><span class="">2.3k</span></span><span title="18 badges"><span class="badge1">&#9679;</span><span class="badgecount">18</span></span><span title="30 badges"><span class="silver">&#9679;</span><span class="badgecount">30</span></span><span title="69 badges"><span class="bronze">&#9679;</span><span class="badgecount">69</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/63738/its_pheonix "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/ac3ee051ca422f154bb87bbb7b9a68ac.jpg?s=32&amp;d=identicon&amp;r=g" alt="its_pheonix's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/63738/its_pheonix">its_pheonix</a></span></li>
+                <li><span class="score" title="2261 reputation points"><span class="">2.3k</span></span><span title="6 badges"><span class="badge1">&#9679;</span><span class="badgecount">6</span></span><span title="20 badges"><span class="silver">&#9679;</span><span class="badgecount">20</span></span><span title="21 badges"><span class="bronze">&#9679;</span><span class="badgecount">21</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/387/gamabunta "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/83393c46e258fb44adb843ec3a292c94.png?s=32&amp;d=identicon&amp;r=g" alt="gamabunta's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/387/gamabunta">gamabunta ♦♦</a></span></li>
+                <li><span class="score" title="2132 reputation points"><span class="">2.1k</span></span><span title="128 badges"><span class="badge1">&#9679;</span><span class="badgecount">128</span></span><span title="183 badges"><span class="silver">&#9679;</span><span class="badgecount">183</span></span><span title="169 badges"><span class="bronze">&#9679;</span><span class="badgecount">169</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/50526/codemaster1994 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="codemaster1994's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/50526/codemaster1994">codemaster1994</a></span></li>
+                <li><span class="score" title="2129 reputation points"><span class="">2.1k</span></span><span title="7 badges"><span class="badge1">&#9679;</span><span class="badgecount">7</span></span><span title="20 badges"><span class="silver">&#9679;</span><span class="badgecount">20</span></span><span title="18 badges"><span class="bronze">&#9679;</span><span class="badgecount">18</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/40157/achaitanyasai "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/64159311ea03036e42b5ad0aa77273fb.jpg?s=32&amp;d=identicon&amp;r=g" alt="achaitanyasai's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/40157/achaitanyasai">achaitanyasai</a></span></li>
+                <li><span class="score" title="2111 reputation points"><span class="">2.1k</span></span><span title="6 badges"><span class="badge1">&#9679;</span><span class="badgecount">6</span></span><span title="17 badges"><span class="silver">&#9679;</span><span class="badgecount">17</span></span><span title="42 badges"><span class="bronze">&#9679;</span><span class="badgecount">42</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/45860/ravi0213 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="ravi0213's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/45860/ravi0213">ravi0213</a></span></li>
+                <li><span class="score" title="2090 reputation points"><span class="">2.1k</span></span><span title="4 badges"><span class="badge1">&#9679;</span><span class="badgecount">4</span></span><span title="13 badges"><span class="silver">&#9679;</span><span class="badgecount">13</span></span><span title="24 badges"><span class="bronze">&#9679;</span><span class="badgecount">24</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/14998/nitinj "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/e99c7e0538a31c32810a03dd25c7fd52.jpg?s=32&amp;d=identicon&amp;r=g" alt="nitinj's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/14998/nitinj">nitinj</a></span></li>
+                <li><span class="score" title="2022 reputation points"><span class="">2.0k</span></span><span title="11 badges"><span class="badge1">&#9679;</span><span class="badgecount">11</span></span><span title="19 badges"><span class="silver">&#9679;</span><span class="badgecount">19</span></span><span title="26 badges"><span class="bronze">&#9679;</span><span class="badgecount">26</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/46655/lalitc375 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/7815de6ee8f063f5f0d438f19dc2ec4c.jpg?s=32&amp;d=identicon&amp;r=g" alt="lalitc375's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/46655/lalitc375">lalitc375</a></span></li>
+                <li><span class="score" title="2001 reputation points"><span class="">2.0k</span></span><span title="1 badges"><span class="bronze">&#9679;</span><span class="badgecount">1</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/66173/pranjalranjan "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/default.jpg?s=32&amp;d=identicon&amp;r=g" alt="pranjalranjan's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/66173/pranjalranjan">pranjalranjan</a></span></li>
+                <li><span class="score" title="1950 reputation points"><span class="">1.9k</span></span><span title="2 badges"><span class="badge1">&#9679;</span><span class="badgecount">2</span></span><span title="14 badges"><span class="silver">&#9679;</span><span class="badgecount">14</span></span><span title="32 badges"><span class="bronze">&#9679;</span><span class="badgecount">32</span></span></li>
+            </ul>
+        </div>
+        
+        <div class="user">
+            <ul>
+                <li class="thumb"><a href="/users/284/anudeep2011 "><img class="gravatar" width="32" height="32" src="//www.codechef.com/sites/default/files/uploads/pictures/1fab90a0a1a3b9f568a45102790f9c91.jpg?s=32&amp;d=identicon&amp;r=g" alt="anudeep2011's gravatar image" /></a></li>
+                <li><span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/284/anudeep2011">anudeep2011</a></span></li>
+                <li><span class="score" title="1948 reputation points"><span class="">1.9k</span></span><span title="7 badges"><span class="badge1">&#9679;</span><span class="badgecount">7</span></span><span title="26 badges"><span class="silver">&#9679;</span><span class="badgecount">26</span></span><span title="32 badges"><span class="bronze">&#9679;</span><span class="badgecount">32</span></span></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+                </div>
+                <div id="tail" style="clear:both;">
+                    
+<div class="pager">
+    <p class="paginator"><span class="curr this_page">1</span><a class="page" href="/users/?sort=reputation&amp;page=2" >2</a><a class="page" href="/users/?sort=reputation&amp;page=3" >3</a><a class="page" href="/users/?sort=reputation&amp;page=4" >4</a><a class="page" href="/users/?sort=reputation&amp;page=5" >5</a>
+                
+            
+        
+    
+        
+          ...
+        
+    
+        
+            
+                
+                     <a class="page" href="/users/?sort=reputation&amp;page=2234" >2234</a><span class="next"><a href="/users/?sort=reputation&amp;page=2" title="next page">next &raquo;</a></span></p>
+</div>              
+
+                </div>
+            </div>
+            <div class="spacer3"></div>
+        </div>
+        
+        
+            
+            <div id="ground">
+                
+                    <p><html>
+<head>
+<link rel="stylesheet" type="text/css" href="/m/default/media/style/cc.css">
+</head></p>
+<div id="cc-footer" class="cc-wrapper">
+    <div class="cc-inner-wrapper">
+        <!-- SECOND NAV -->
+        <div class="cc-cols-2">
+            <div id="cc-secondary-nav">
+                <ul>
+                    <!-- <li><a href="http://blog.corp.pw/" target="_blank">.pw Corp Blog</a></li>
+                    <li><a href="http://start.pw/" target="_blank">Vision</li> -->
+                    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+                    <li><a href="http://www.directi.com/" target="_blank">About Directi</a></li>
+                    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+                    <!-- <li><a href="http://wiki.directi.com/" target="_blank">Wiki</a></li>
+                    <li><a href="http://wiki.directi.com/display/corp/Home" target="_blank">About</a></li> -->
+                </ul>
+                <ul>
+                    <li><a href="http://www.codechef.com/campus/">CodeChef Campus Chapters</a></li>
+                    <li><a href="http://www.codechef.com/school/">CodeChef For Schools</a></li>
+                    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="cc-fineprint">
+                <p>© 2009, Directi Group. All Rights Reserved.</p>
+                <p><small>Powered by OSQA<br> </small></p>
+            </div>
+        </div>
+        <!-- /SECOND NAV -->
+        <!-- LEGAL & COPYRIGHT -->
+        <div>
+            <div id="cc-sponsor-strip">
+                <a href="http://www.directi.com" target="_blank"><img src="/m/default/media/images/footer-sponsor-strip.gif" alt="Sponsors" title="Sponsors"></a>
+            </div>
+        </div>
+        <!-- /LEGAL & COPYRIGHT -->
+    </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4090524-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Start Alexa Certify Javascript -->
+
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"q16Cj1a8gN00iz", domain:"codechef.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz" style="display:none" height="1" width="1" alt="" /></noscript>
+
+<!-- End Alexa Certify Javascript -->
+                
+            </div>
+            
+        
+        
+        
+        
+        </div>
+
+        <!-- Put all elements with fixed position here, IE6 fixed position fix: http://ryanfait.com/position-fixed-ie6/ -->
+        <div class="notify" style="display:none">
+            
+                
+            
+            <a id="close-notify" onclick="notify.close(true)">&#215;</a>
+        </div>
+
+    
+<link rel="stylesheet" href="/static/debug_toolbar/css/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/static/debug_toolbar/css/toolbar.css" type="text/css" />
+
+<!-- Prevent our copy of jQuery from registering as an AMD module on sites that use RequireJS. -->
+<script src="/static/debug_toolbar/js/jquery_pre.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/static/debug_toolbar/js/jquery_post.js"></script>
+
+<script src="/static/debug_toolbar/js/toolbar.js"></script>
+<div id="djDebug" class="djdt-hidden" dir="ltr"
+     data-store-id="2456606f5f4c485892cd1806bac93926" data-render-panel-url="/debug/render_panel/"
+     >
+	<div class="djdt-hidden" id="djDebugToolbar">
+		<ul id="djDebugPanelList">
+			
+			<li><a id="djHideToolBarButton" href="#" title="Hide toolbar">Hide &#187;</a></li>
+			
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtVersionsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Versions" class="VersionsPanel">
+					
+					Versions
+					
+					
+						<br /><small>Django 1.8</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTimerPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Time" class="TimerPanel">
+					
+					Time
+					
+					
+						<br /><small>CPU: 1664.00ms (1666.43ms)</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSettingsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Settings from &lt;code&gt;settings&lt;/code&gt;" class="SettingsPanel">
+					
+					Settings
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtHeadersPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Headers" class="HeadersPanel">
+					
+					Headers
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRequestPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Request" class="RequestPanel">
+					
+					Request
+					
+					
+						<br /><small>users</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSQLPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="SQL queries from 1 connection" class="SQLPanel">
+					
+					SQL
+					
+					
+						<br /><small>57 queries in 25.02ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtStaticFilesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Static files (79 found, 0 used)" class="StaticFilesPanel">
+					
+					Static files
+					
+					
+						<br /><small>0 files used</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTemplatesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Templates (5 rendered)" class="TemplatesPanel">
+					
+					Templates
+					
+					
+						<br /><small>paginator/sort_tabs.html</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtCachePanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Cache calls from 1 backend" class="CachePanel">
+					
+					Cache
+					
+					
+						<br /><small>94 calls in 21.87ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSignalsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Signals" class="SignalsPanel">
+					
+					Signals
+					
+					
+						<br /><small>17 receivers of 12 signals</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtLoggingPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Log messages" class="LoggingPanel">
+					
+					Logging
+					
+					
+						<br /><small>0 messages</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRedirectsPanel" title="Enable for next and successive requests" />
+					
+						<div class="djdt-contentless djdt-disabled">
+					
+					Intercept redirects
+					
+					
+						</div>
+					
+				</li>
+			
+		</ul>
+	</div>
+	<div class="djdt-hidden" id="djDebugToolbarHandle">
+		<span title="Show toolbar" id="djShowToolBarButton">&#171;</span>
+	</div>
+	
+		
+			<div id="VersionsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Versions</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TimerPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Time</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SettingsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Settings from <code>settings</code></h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="HeadersPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Headers</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="RequestPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Request</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SQLPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>SQL queries from 1 connection</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="StaticFilesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Static files (79 found, 0 used)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TemplatesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Templates (5 rendered)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="CachePanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Cache calls from 1 backend</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SignalsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Signals</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="LoggingPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Log messages</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+	
+	<div id="djDebugWindow" class="djdt-panelContent"></div>
+</div>
+</body>
+</html>
+<!-- end template base_content.html -->

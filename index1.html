@@ -1,0 +1,2005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- base_content.html -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>CodeChef Discuss</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="codechef,programming,contest,discuss,forum,community" />
+        
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds/rss" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <link rel="shortcut icon" href="/upfiles/favicon_1.ico" />
+        <link href="/m/default/media/style/style.css" rel="stylesheet" type="text/css" />
+        
+        <link href="/m/default/media/style/custom.css?q=star_system" rel="stylesheet" type="text/css" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="" />
+        <meta property="og:description"        content="" />
+        <meta property="og:image"              content="https://s3.amazonaws.com/codechef_shared/misc/fb-image-icon.png" />
+        <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.js" />
+        <!--[if IE 6]>
+
+        <style type="text/css">
+        img, div, a { behavior: url(/m/default/media/iepngfix/iepngfix.htc) }
+        </style>
+        <![endif]-->
+        
+
+        <script src="//www.google.com/jsapi" type="text/javascript"></script>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+            google.load("jquery", "1.4.2");
+            google.load("jqueryui", "1", {autoload:true});
+
+            var i18nLang = 'en';
+            var appUrl = 'http://discusstest.codechef.com/'
+            var scriptUrl = '/'
+            var osqaSkin = 'default';
+
+            var messages = {
+                username: 'lalitc375',
+                confirm: "Are you sure?",
+                yes: "Yes",
+                no: "No",
+                message: "Message:",
+                cancel: "Cancel",
+                close: "Close",
+                ok: "Ok",
+                matching_tags_url: "/matching_tags/",
+                word: "word",
+                words: "words",
+                character: "character",
+                characters: "characters"
+            }
+        /*]]>*/
+        </script>
+        <script type="text/javascript" src="/m/default/media/js/osqa.main.js?rv=318"></script>
+        
+        
+        
+        
+        <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="CodeChef Discuss Search" />
+        
+    </head>
+    <body>
+        <div class="wrapper">
+        
+        <!-- template header.html -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<style>
+.MathJax {
+    font-size: 2em;
+}
+</style>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        initSearchBoxValue();
+    });
+
+    MathJax.Hub.Config({
+        "tex2jax": {
+            inlineMath: [['$', '$']],
+            multiLine: true
+        }
+    });
+
+    function initSearchBoxValue()
+    {
+        var searchKeyword= $("#keywords").val();
+            if (searchKeyword=="")
+            {
+                $("#keywords").val("Search Here...");
+            }
+   }
+
+    function searchBoxOnBlur(){
+        $("#keyword").className="searchInput";
+        if ($("#keywords").val()=="")
+                $("#keywords").val("Search Here...");
+    }
+
+    function searchBoxOnFocus(){
+        $("#keyword").className="searchInputFocused";
+        if ($("#keywords").val()=="Search Here...")
+            $("#keywords").val("");
+   }
+
+    function about(){
+        if (document.URL=="http://osqa.codechef.local/about/")
+        {
+            $("")
+        }
+    }
+
+</script>
+
+
+
+ 
+
+	<div id="roof">
+
+
+
+		<div id="top" style="position:absolute; text-align: left;">
+            <a href="https://www.codechef.com/">
+                << Back to CodeChef
+            </a>
+		</div>
+
+		<div id="logo">
+			<a href="/">
+				<img src="/upfiles/site-logo_21.png" title="back to home page" alt="CodeChef Discuss logo"/>
+			</a>
+		</div>
+
+		<div id="top">
+		     <a href="/users/46655/lalitc375" >lalitc375</a> <span class="score" title="2001 reputation points"><span class="">2.0k</span></span><span title="1 badges"><span class="bronze">&#9679;</span><span class="badgecount">1</span></span> <a href="/logout/" >Log Out</a> 
+
+            <div id="nav">
+                <a id="nav_questions" class="on" href="/questions/" >questions</a><a id="nav_tags" href="/tags/" >tags</a><a id="nav_users" href="/users/" >users</a><a id="nav_badges" href="/badges/" >badges</a><a id="nav_unanswered" href="/questions/unanswered/" >unanswered</a>
+                <a id="horiSeparator"/>
+                <a id="nav_ask" href="/questions/ask/" class="special">ask a question</a>
+                <a id="nav_about" href="/about" class="off" onclick="about()" >about</a>
+                <a id="nav_faq" href="/faq">faq</a>
+
+            </div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="clear"></div>
+	<div id="searchBar">
+
+
+
+
+        <table id="searchBarTable">
+            <tr>
+                <td class="left">
+                    CodeChef Discussion
+                </td>
+                <td class="right">
+                    <form action="/search/" method="get">
+                    <input type='hidden' name='csrfmiddlewaretoken' value='auRiIDMlkZr6rgytQK4uTtM8W9UN1n4i' />
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" class="searchInput" value="" name="q" id="keywords" onfocus="searchBoxOnFocus()" onblur="searchBoxOnBlur()"/>
+                                </td>
+                                <td>
+                                    <div class="options">
+                                        <input id="type-question" type="radio" value="question" name="t" 
+                                            checked="checked" /><label for="type-question">questions</label>
+                                        <input id="type-tag" type="radio" value="tag" name="t" /><label for="type-tag">tags</label>
+                                        <input id="type-user" type="radio" value="user" name="t" /><label for="type-user">users</label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <h1 id="separator">
+        </h1>
+	</div>
+
+
+	
+
+<!-- end template header.html -->
+
+        
+
+
+
+<div id="wrapper">
+    
+    
+    <div id="room">
+        <div id="CALeft">
+            
+
+<div class="tabBar">
+    
+
+<div class="headQuestions">
+    
+        
+            
+                
+                    All Questions
+                
+            
+        
+    
+</div>
+    <a class="feed-icon" style="background-image:url('/m/default/media/images/feed-icon-small.png');" href="/feeds/rss" title="subscribe to question RSS feed"></a>
+    
+<div class="tabsA"><a href="/questions/?sort=active" class="on" title="Most recently updated questions">active</a><a href="/questions/?sort=popular" title="Most popular questions">popular</a><a href="/questions/?sort=newest" title="most recently asked questions">newest</a><a href="/questions/?sort=mostvoted" title="most voted questions">most voted</a></div>
+
+</div>
+<div id="listA">
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">376</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="hey why is that my code gives wrong answer ...:(//knapsack problem #include&amp;lt;cstdio&amp;gt;#include&amp;lt;iostream&amp;gt;int main(){ int t,a,j,i,k,l,W; printf(&quot;enter the amount of the items\n&quot;); scanf(&quot;%d&quot;,&amp;amp;t); int w[t+1],v[t+1]; int b[t+1][t+1]; printf(&quot;enter the total " href="/questions/38155/0-1-kanpsack">[closed] 0 1 kanpsack</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 26, 2017, 1:04 p.m.">23 hours ago</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/46655/lalitc375">lalitc375</a></span><span class="score" title="2001 reputation"><span class="">2.0k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-weight" href="/tags/weight/" title="see questions tagged 'weight'" rel="tag">weight</a>
+            <a class="tag-link-value" href="/tags/value/" title="see questions tagged 'value'" rel="tag">value</a>
+            <a class="tag-link-1" href="/tags/1/" title="see questions tagged '1'" rel="tag">1</a>
+            <a class="tag-link-0" href="/tags/0/" title="see questions tagged '0'" rel="tag">0</a>
+            <a class="tag-link-knapsack" href="/tags/knapsack/" title="see questions tagged 'knapsack'" rel="tag">knapsack</a>
+            <a class="tag-link-dp" href="/tags/dp/" title="see questions tagged 'dp'" rel="tag">dp</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">1</div>
+            <div>vote</div>
+        </div >
+        <div title="this question has an accepted answer" class="status answered-accepted answered">
+            <div class="item-count">2</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">74</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Cosine similarity is a measure of similarity between two vectors of an inner product space that measures the cosine of the angle between them.Note that these bounds apply for any number of dimensions, and cosine similarity is most commonly used in high-dimensional positive spacesHere are two very s" href="/questions/68063/cosine-similarity">cosine similarity</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 23, 2017, 7:17 p.m.">23 Jun, 19:17</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1169/betlista">betlista</a></span><span class="score" title="16536 reputation"><span class="">16.5k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-cosine" href="/tags/cosine/" title="see questions tagged 'cosine'" rel="tag">cosine</a>
+            <a class="tag-link-similarity" href="/tags/similarity/" title="see questions tagged 'similarity'" rel="tag">similarity</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div title="this question has an accepted answer" class="status answered-accepted answered">
+            <div class="item-count">5</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">502</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Okay, so here is my code to solve the problem Kayaks: #include &amp;lt;stdio.h&amp;gt;using namespace std;int main(){ int N; scanf(&quot;%d&quot;, &amp;amp;N); float max = 0; float min = 1; int maxind; int minind; int w[N]; int s[N]; for(int j = 0; j &amp;lt; N; ++j) { " href="/questions/1333/kayaks-logic">Kayaks logic</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 23, 2017, 7 p.m.">23 Jun, 19:00</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1/admin">admin ♦♦</a></span><span class="score" title="10752 reputation"><span class="">10.8k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-h2" href="/tags/h2/" title="see questions tagged 'h2'" rel="tag">h2</a>
+            <a class="tag-link-medium" href="/tags/medium/" title="see questions tagged 'medium'" rel="tag">medium</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">5</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Regarding the algorithm itself :I&#39;d combine the higher with the lowerone and would get the answer...I think the mistake is here.Let&#39;s have the following input :450 5150 5250 5250 54Here, you combine the first person P1 (ratio=51/50) with the last one P4 (ratio=54/50).The speed of the f" href="/questions/1360/this-is-test">this is test</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 23, 2017, 7 p.m.">23 Jun, 19:00</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1/admin">admin ♦♦</a></span><span class="score" title="10752 reputation"><span class="">10.8k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-dp" href="/tags/dp/" title="see questions tagged 'dp'" rel="tag">dp</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">3</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="" href="/questions/68151/afafsfafasfasfasfasfasdfasfasfsadfsa">[closed] afafsfafasfasfasfasfasdfasfasfsadfsa</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 23, 2017, 6:51 p.m.">23 Jun, 18:51</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1/admin">admin ♦♦</a></span><span class="score" title="10752 reputation"><span class="">10.8k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">12</div>
+            <div>votes</div>
+        </div >
+        <div title="this question has an accepted answer" class="status answered-accepted answered">
+            <div class="item-count">5</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count"><span class="thousand">1.2k</span></div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="In every contest cheating cases keeps on happening. I guess the best solution to this problem is that codechef provide its own IDE like hackerrank so users can test their code on codechef itself.In a live contest, SUCCESSFUL SUBMISSIONS along with ALL SUBMISSIONS section should be blocked becau" href="/questions/17645/few-suggestion">[closed] Few suggestion</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 23, 2017, 6:48 p.m.">23 Jun, 18:48</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1/admin">admin ♦♦</a></span><span class="score" title="10752 reputation"><span class="">10.8k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-codechef" href="/tags/codechef/" title="see questions tagged 'codechef'" rel="tag">codechef</a>
+            <a class="tag-link-long-contest" href="/tags/long-contest/" title="see questions tagged 'long-contest'" rel="tag">long-contest</a>
+            <a class="tag-link-suggestion" href="/tags/suggestion/" title="see questions tagged 'suggestion'" rel="tag">suggestion</a>
+            <a class="tag-link-contest" href="/tags/contest/" title="see questions tagged 'contest'" rel="tag">contest</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">1</div>
+            <div>vote</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">343</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="PROBLEM LINK:Practice Contest Author: Konstantsin Sokol Tester: Gedi Zheng Editorialist: Miguel Oliveira DIFFICULTY:Easy.PREREQUISITES:Math, Linear Algebra.PROBLEMWe have a system of N equations on N variables. Equation i is of the form: $x_1 + x_2 + ... + x_{i-1} + x_{i+1} + .. x_" href="/questions/68094/equality-editorial">EQUALITY - Editorial</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 23, 2017, 6:31 p.m.">23 Jun, 18:31</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1/admin">admin ♦♦</a></span><span class="score" title="10752 reputation"><span class="">10.8k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-cook57" href="/tags/cook57/" title="see questions tagged 'cook57'" rel="tag">cook57</a>
+            <a class="tag-link-easy" href="/tags/easy/" title="see questions tagged 'easy'" rel="tag">easy</a>
+            <a class="tag-link-math" href="/tags/math/" title="see questions tagged 'math'" rel="tag">math</a>
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">-1</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">78</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Hi, I&#39;m an average person, good in competitive programming. I want to brush off my skills to a higher extent and make the most out of this coming summer. I know the basic mantra &quot;Practice until you can&#39;t get it wrong&quot; but still is there some advice that could be of good help for people out there lik" href="/questions/68141/perfect-summer-plan-for-competetive-programming">[closed] Perfect Summer Plan for Competetive Programming?</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="June 23, 2017, 6:28 p.m.">23 Jun, 18:28</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/1/admin">admin ♦♦</a></span><span class="score" title="10752 reputation"><span class="">10.8k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-help" href="/tags/help/" title="see questions tagged 'help'" rel="tag">help</a>
+            <a class="tag-link-beginner" href="/tags/beginner/" title="see questions tagged 'beginner'" rel="tag">beginner</a>
+            <a class="tag-link-programming" href="/tags/programming/" title="see questions tagged 'programming'" rel="tag">programming</a>
+            <a class="tag-link-competitive" href="/tags/competitive/" title="see questions tagged 'competitive'" rel="tag">competitive</a>
+            <a class="tag-link-suggestion" href="/tags/suggestion/" title="see questions tagged 'suggestion'" rel="tag">suggestion</a>
+            <a class="tag-link-codechef" href="/tags/codechef/" title="see questions tagged 'codechef'" rel="tag">codechef</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">3</div>
+            <div>votes</div>
+        </div >
+        <div title="this question has an accepted answer" class="status answered-accepted answered">
+            <div class="item-count">4</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">104</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Hi all,We all know how difficult it is to be aware of the different coding competitions taking place on various platforms,so I&#39;ve made an add-on(extension) both in chrome and firefox to make this task easy. Updates from Codechef,HackerEarth,Hackerrank,Topcoder,CodeforcesAdd to google calendar f" href="/questions/68122/firefox-and-chrome-extension-for-competitive-programming">Firefox and Chrome extension for Competitive Programming</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 6:55 p.m.">20 Apr '15, 18:55</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/66700/adi28galaxyak">adi28galaxyak</a></span><span class="score" title="66 reputation">66</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-firefox" href="/tags/firefox/" title="see questions tagged 'firefox'" rel="tag">firefox</a>
+            <a class="tag-link-open-source" href="/tags/open-source/" title="see questions tagged 'open-source'" rel="tag">open-source</a>
+            <a class="tag-link-extension" href="/tags/extension/" title="see questions tagged 'extension'" rel="tag">extension</a>
+            <a class="tag-link-chrome" href="/tags/chrome/" title="see questions tagged 'chrome'" rel="tag">chrome</a>
+            <a class="tag-link-tool" href="/tags/tool/" title="see questions tagged 'tool'" rel="tag">tool</a>
+            <a class="tag-link-add-on" href="/tags/add-on/" title="see questions tagged 'add-on'" rel="tag">add-on</a>
+            <a class="tag-link-codechef" href="/tags/codechef/" title="see questions tagged 'codechef'" rel="tag">codechef</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">1</div>
+            <div>vote</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">233</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="PROBLEM LINK:Practice Contest Author: Konstantsin Sokol Tester: Gedi Zheng Editorialist: Miguel Oliveira DIFFICULTY:Hard.PREREQUISITES:Math, Linear Algebra.PROBLEMGiven 2 polynomials Q and T, find a polynomial P such that $P(x) = Q(x) + \int_0^1 T(x \cdot s) P(s) ds$ holds for ever" href="/questions/68104/agents-editorial">AGENTS - Editorial</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 5:27 p.m.">20 Apr '15, 17:27</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/3036/dpraveen">dpraveen ♦♦</a></span><span class="score" title="1366 reputation"><span class="">1.4k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-cook57" href="/tags/cook57/" title="see questions tagged 'cook57'" rel="tag">cook57</a>
+            <a class="tag-link-hard" href="/tags/hard/" title="see questions tagged 'hard'" rel="tag">hard</a>
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+            <a class="tag-link-math" href="/tags/math/" title="see questions tagged 'math'" rel="tag">math</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">326</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="PROBLEM LINK:Practice Contest Author: Konstantsin Sokol Tester: Gedi Zheng Editorialist: Miguel Oliveira DIFFICULTY:Easy.PREREQUISITES:Sets.PROBLEMGiven 2 sets of integers, count the number of integers that appear in both sets and the number of integers between 1 and N that do not " href="/questions/68095/vcs-editorial">VCS - Editorial</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 5:26 p.m.">20 Apr '15, 17:26</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/3036/dpraveen">dpraveen ♦♦</a></span><span class="score" title="1366 reputation"><span class="">1.4k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-cook57" href="/tags/cook57/" title="see questions tagged 'cook57'" rel="tag">cook57</a>
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+            <a class="tag-link-cakewalk" href="/tags/cakewalk/" title="see questions tagged 'cakewalk'" rel="tag">cakewalk</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">2</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">830</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="PROBLEM LINK:Practice Contest Author: Konstantsin Sokol Tester: Gedi Zheng Editorialist: Miguel Oliveira DIFFICULTY:Medium-hard.PREREQUISITES:Dynamic Programming, Binary Indexed Trees.PROBLEM:You are given a sequence $a_1, a_2, ..., a_N$ of non-negative integers. Your task is to proc" href="/questions/68100/lfives-editorial">LFIVES - Editorial</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 5:26 p.m.">20 Apr '15, 17:26</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/3036/dpraveen">dpraveen ♦♦</a></span><span class="score" title="1366 reputation"><span class="">1.4k</span></span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-cook57" href="/tags/cook57/" title="see questions tagged 'cook57'" rel="tag">cook57</a>
+            <a class="tag-link-medium" href="/tags/medium/" title="see questions tagged 'medium'" rel="tag">medium</a>
+            <a class="tag-link-dynamic-prog" href="/tags/dynamic-prog/" title="see questions tagged 'dynamic-prog'" rel="tag">dynamic-prog</a>
+            <a class="tag-link-fenwick" href="/tags/fenwick/" title="see questions tagged 'fenwick'" rel="tag">fenwick</a>
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">107</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Hello everyone! I know that the editorial has been released but ,after several attempts, I don&#39;t understand it.Solution Link.In my solution, I created a tree using an array that shows whether there is a connection of node p and q. My question or problem that I have is how do I find the minimum cos" href="/questions/67789/carlos-april-challenge">CARLOS - April Challenge</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 5:19 p.m.">20 Apr '15, 17:19</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/27812/vicky2135">vicky2135</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-array" href="/tags/array/" title="see questions tagged 'array'" rel="tag">array</a>
+            <a class="tag-link-carlos" href="/tags/carlos/" title="see questions tagged 'carlos'" rel="tag">carlos</a>
+            <a class="tag-link-graph-theory" href="/tags/graph-theory/" title="see questions tagged 'graph-theory'" rel="tag">graph-theory</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">243</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Could someone explain the editorial of CARLOS with an example . I am not able to understand the use of SET_VALUE array." href="/questions/67891/wanted-the-explanation-of-carlos-editorial">Wanted the explanation of CARLOS editorial</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 5:05 p.m.">20 Apr '15, 17:05</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/27812/vicky2135">vicky2135</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-april15" href="/tags/april15/" title="see questions tagged 'april15'" rel="tag">april15</a>
+            <a class="tag-link-carlos" href="/tags/carlos/" title="see questions tagged 'carlos'" rel="tag">carlos</a>
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">24</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Why am I getting WA in this code ?" href="/questions/68135/wa-in-vcs-cook57">WA in VCS COOK57</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 4:51 p.m.">20 Apr '15, 16:51</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/72718/rok_04">rok_04</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-wrong-answer" href="/tags/wrong-answer/" title="see questions tagged 'wrong-answer'" rel="tag">wrong-answer</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">43</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="can anyone helps me. thank you" href="/questions/68114/tournament-schedulling-using-c-languange">Tournament schedulling using c languange</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 3:44 p.m.">20 Apr '15, 15:44</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/93437/imujjwalanand">imujjwalanand</a></span><span class="score" title="24 reputation">24</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-c" href="/tags/c/" title="see questions tagged 'c'" rel="tag">c</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">20</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Please help me the algorithmA matrix of dimensions n*n contains only zeros and ones as elements. Write psuedocode to find the closest non zero element for every element with least complexity.• Distance is EuclideanHint• First solve for one dimentsion that " href="/questions/68133/pseudocode-problem">pseudocode problem</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 2:37 p.m.">20 Apr '15, 14:37</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/71063/sharru05">sharru05</a></span><span class="score" title="219 reputation">219</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-distance" href="/tags/distance/" title="see questions tagged 'distance'" rel="tag">distance</a>
+            <a class="tag-link-matrix" href="/tags/matrix/" title="see questions tagged 'matrix'" rel="tag">matrix</a>
+            <a class="tag-link-shortest-path" href="/tags/shortest-path/" title="see questions tagged 'shortest-path'" rel="tag">shortest-path</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">244</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Here is the link of the problem http://www.spoj.com/problems/GAME3/ include&amp;lt;iostream&amp;gt;using namespace std;int main(){ unsigned long long n, ctr, a, c, d, i;int t;char x[15] = { &#39;m&#39;, &#39;i&#39;, &#39;m&#39;, &#39;m&#39;, &#39;i&#39;, &#39;m&#39;, &#39;i&#39;, &#39;i&#39;, &#39;m&#39;, &#39;i&#39;, &#39;m&#39;, &#39;i&#39;, &#39;m&#39;, &#39;i&#39;, &#39;m&#39; };cin &amp;gt;&amp;gt; t;while (t--){" href="/questions/51886/wa-in-game3-spoj">WA IN GAME3 SPOJ</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 2:16 p.m.">20 Apr '15, 14:16</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/45277/saurv4u">saurv4u</a></span><span class="score" title="11 reputation">11</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-spoj" href="/tags/spoj/" title="see questions tagged 'spoj'" rel="tag">spoj</a>
+            <a class="tag-link-game3" href="/tags/game3/" title="see questions tagged 'game3'" rel="tag">game3</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">57</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Codechef has recently introduced the feature to link your codechef account to github account.What is the use of this feature? What are the benefits of connecting your github account?" href="/questions/68121/connecting-your-github-account-to-codechef">Connecting your github account to Codechef</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 11:55 a.m.">20 Apr '15, 11:55</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/62488/rohanagarwal">rohanagarwal</a></span><span class="score" title="90 reputation">90</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-github" href="/tags/github/" title="see questions tagged 'github'" rel="tag">github</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">3</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">197</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="I&#39;m trying to solve practice(easy) problems, but I only succeed 6 problems only so far. So, I think I need some very easy problem recommend for me to practice. Tell me if you have some to recommend to me. Thank You...FYI: I&#39;ve solved : - Life, the Universe, and Everything  - ATM" href="/questions/67097/help-me-please">Help me please.......</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 7:53 a.m.">20 Apr '15, 07:53</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/88520/edwinharly">edwinharly</a></span><span class="score" title="3 reputation">3</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-help" href="/tags/help/" title="see questions tagged 'help'" rel="tag">help</a>
+            <a class="tag-link-beginner" href="/tags/beginner/" title="see questions tagged 'beginner'" rel="tag">beginner</a>
+            <a class="tag-link-practice" href="/tags/practice/" title="see questions tagged 'practice'" rel="tag">practice</a>
+            <a class="tag-link-noob" href="/tags/noob/" title="see questions tagged 'noob'" rel="tag">noob</a>
+            <a class="tag-link-easy" href="/tags/easy/" title="see questions tagged 'easy'" rel="tag">easy</a>
+            <a class="tag-link-please_help" href="/tags/please_help/" title="see questions tagged 'please_help'" rel="tag">please_help</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">1</div>
+            <div>answer</div>
+        </div>
+        <div class="views">
+             <div class="item-count">87</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="can we construct a segment tree without recursion??????" href="/questions/68115/segment-tree">segment tree</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 6:52 a.m.">20 Apr '15, 06:52</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/36081/sumitasr_128">sumit.asr_128</a></span><span class="score" title="46 reputation">46</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-segment-tree" href="/tags/segment-tree/" title="see questions tagged 'segment-tree'" rel="tag">segment-tree</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">41</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="include&amp;lt;iostream&amp;gt;include&amp;lt;stdio.h&amp;gt;include&amp;lt;math.h&amp;gt;using namespace std;//to find GCDint gcd(int a, int b){ if (b == 0) { return a; } else { return gcd(b, a % b); }}//to find modulo of the factorsint factor(int n){ int i=0,flag=0; int k=sqrt(n);" href="/questions/68117/getting-wa-for-lediv">Getting WA for LEDIV</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 3:52 a.m.">20 Apr '15, 03:52</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/88046/vaasaini96">vaasaini96</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-lediv" href="/tags/lediv/" title="see questions tagged 'lediv'" rel="tag">lediv</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">3</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">141</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="For the question : http://www.codechef.com/problems/FRMQ , I used the sparse table agorithm given here :http://wcipeg.com/wiki/Range_minimum_query to create a chache and then process the queries. Im getting only 70 points and subtask 3 shows TLE. My code : http://www.codechef.com/viewsolution/679337" href="/questions/68083/frmq-tle-sparse-table">FRMQ TLE - Sparse Table</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 20, 2015, 12:58 a.m.">20 Apr '15, 00:58</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/91580/almondpie">almondpie</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-tle" href="/tags/tle/" title="see questions tagged 'tle'" rel="tag">tle</a>
+            <a class="tag-link-frmq" href="/tags/frmq/" title="see questions tagged 'frmq'" rel="tag">frmq</a>
+            <a class="tag-link-april15" href="/tags/april15/" title="see questions tagged 'april15'" rel="tag">april15</a>
+            <a class="tag-link-chefandarray" href="/tags/chefandarray/" title="see questions tagged 'chefandarray'" rel="tag">chefandarray</a>
+            <a class="tag-link-sparse-tables" href="/tags/sparse-tables/" title="see questions tagged 'sparse-tables'" rel="tag">sparse-tables</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">80</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Kindly reset the timer..." href="/questions/68099/april-cook-off-bad-gateway-problem-for-first-20-mins">April cook off Bad gateway problem for first 20 mins.</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 19, 2015, 9:54 p.m.">19 Apr '15, 21:54</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/70136/rahul_sethi">rahul_sethi</a></span><span class="score" title="7 reputation">7</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-cook" href="/tags/cook/" title="see questions tagged 'cook'" rel="tag">cook</a>
+            <a class="tag-link-april" href="/tags/april/" title="see questions tagged 'april'" rel="tag">april</a>
+            <a class="tag-link-off" href="/tags/off/" title="see questions tagged 'off'" rel="tag">off</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">12</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">10</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">789</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Hi all!We all love to participate in programming challenges, don&#39;t we? The only problem is that we are often not aware about the numerous online programming challenges that happen regularly and only participate in the few challenges that are popular. So, I and Chirrag Nangia felt the need for a pla" href="/questions/66489/challenge-hunt-all-programming-challenges-at-one-place">Challenge Hunt - All programming challenges at one place</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 19, 2015, 9:02 p.m.">19 Apr '15, 21:02</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/96988/ayush_03">ayush_03</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-#extension" href="/tags/%2523extension/" title="see questions tagged '#extension'" rel="tag">#extension</a>
+            <a class="tag-link-#chrome" href="/tags/%2523chrome/" title="see questions tagged '#chrome'" rel="tag">#chrome</a>
+            <a class="tag-link-challenge" href="/tags/challenge/" title="see questions tagged 'challenge'" rel="tag">challenge</a>
+            <a class="tag-link-codechef" href="/tags/codechef/" title="see questions tagged 'codechef'" rel="tag">codechef</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">3</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">3</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">857</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="PROBLEM LINK:PracticeContestAuthor: Praveen DhinwaTester: Sergey KulikEditorialist: Adury Surya Kiran DIFFICULTY:Medium-hardPREREQUISITES:dynamic programmingPROBLEM:There are N participants participating in an election and voting both. Each person will vote uniformly randomly vote to any" href="/questions/67815/devvote-editorial">DEVVOTE - Editorial</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 19, 2015, 8:28 p.m.">19 Apr '15, 20:28</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/3351/lebron">lebron</a></span><span class="score" title="616 reputation">616</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-devvote" href="/tags/devvote/" title="see questions tagged 'devvote'" rel="tag">devvote</a>
+            <a class="tag-link-april15" href="/tags/april15/" title="see questions tagged 'april15'" rel="tag">april15</a>
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">19</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count"><span class="thousand">2.9k</span></div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Why is my program getting wrong answer?" href="/questions/7640/why-do-i-get-wrong-answer">Why do I get Wrong Answer?</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 19, 2015, 8:17 p.m.">19 Apr '15, 20:17</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/89929/tushargarg">tushargarg</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-faq" href="/tags/faq/" title="see questions tagged 'faq'" rel="tag">faq</a>
+            <a class="tag-link-wrong-answer" href="/tags/wrong-answer/" title="see questions tagged 'wrong-answer'" rel="tag">wrong-answer</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">9</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  answered">
+            <div class="item-count">10</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count"><span class="thousand">2.6k</span></div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Problem Link:PracticeContestAuthor: Roman RubanenkoTester/Editorialist: Utkarsh LathDifficulty:SimplePre-requisites:High school mathsProblem:Given two matrices A and B, both of them having N rows and M columns. The cells of A are numbered in row major order, and cells of B are numbered in " href="/questions/24629/rrmatrix-editorial">RRMATRIX - Editorial</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 19, 2015, 6:04 p.m.">19 Apr '15, 18:04</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/96964/azedine">azedine</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-simple" href="/tags/simple/" title="see questions tagged 'simple'" rel="tag">simple</a>
+            <a class="tag-link-basic-maths" href="/tags/basic-maths/" title="see questions tagged 'basic-maths'" rel="tag">basic-maths</a>
+            <a class="tag-link-cook38" href="/tags/cook38/" title="see questions tagged 'cook38'" rel="tag">cook38</a>
+            <a class="tag-link-editorial" href="/tags/editorial/" title="see questions tagged 'editorial'" rel="tag">editorial</a>
+            <a class="tag-link-rrmatrix" href="/tags/rrmatrix/" title="see questions tagged 'rrmatrix'" rel="tag">rrmatrix</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">121</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="Hello,i was trying to do this question.I think my approach is correct still it is not leading me to correct answer.please help" href="/questions/67613/not-getting-correct-answeranybody-help">Not getting correct answer..Anybody help</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 19, 2015, 5:53 p.m.">19 Apr '15, 17:53</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/92177/chotabheemmc">chotabheemmc</a></span><span class="score" title="38 reputation">38</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-maps" href="/tags/maps/" title="see questions tagged 'maps'" rel="tag">maps</a>
+            <a class="tag-link-c++" href="/tags/c%252B%252B/" title="see questions tagged 'c++'" rel="tag">c++</a>
+        </div>
+    </div>
+
+</div>
+
+    
+<div class="short-summary">
+    <div class="counts">
+        <div class="votes">
+            <div class="item-count">0</div>
+            <div>votes</div>
+        </div >
+        <div  class="status  unanswered">
+            <div class="item-count">0</div>
+            <div>answers</div>
+        </div>
+        <div class="views">
+             <div class="item-count">36</div>
+             <div>views</div>
+        </div>
+    </div>
+
+    <div class="question-summary-wrapper">
+        <h2><a title="problem link http://www.codechef.com/problems/SPOTWOmy solution http://www.codechef.com/viewsolution/6793108mugurelionut’s solution http://www.codechef.com/viewsolution/2905301i run both code on my codeblock on custom input many times. My code gives faster output than &quot;mugurelionut&quot; code (exec" href="/questions/68082/why-i-am-getting-tle-in-super-power-of-2">Why i am getting TLE in super power of 2</a></h2>
+        
+        <div class="userinfo">
+            <span class="relativetime" title="April 19, 2015, 2:18 p.m.">19 Apr '15, 14:18</span>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/85806/admin123">admin123</a></span><span class="score" title="1 reputation">1</span>
+
+        </div>
+
+        <div class="tags">
+            <a class="tag-link-tle" href="/tags/tle/" title="see questions tagged 'tle'" rel="tag">tle</a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+        </div>
+        <div id="CARight">
+            
+    
+    <div class="boxC"><div class="questions-count">
+        10569<span style="color:black;font-size:14px;margin-left:5px">questions</span></div><div class="questions-count">
+        18603<span style="color:black;font-size:14px;margin-left:5px">answers</span></div><div><p class="nomargin">
+            Most <strong>recently updated</strong> questions
+        </p></div></div>
+    
+
+
+
+    
+        
+
+
+
+
+<div id="tagSelector" class="boxC">
+	<h3 class="subtitle">Interesting tags</h3>
+    <div class="tags interesting marked-tags">
+    
+    </div>
+    <input id="interestingTagInput" autocomplete="off" type="text"/>
+    <input id="interestingTagAdd" type="submit" value="Add"/>
+	<h3 class="subtitle">Ignored tags</h3>
+    <div class="tags ignored marked-tags">
+    
+    </div>
+    <input id="ignoredTagInput" autocomplete="off" type="text"/>
+    <input id="ignoredTagAdd" type="submit" value="Add"/>
+    
+</div>
+
+
+
+    
+    
+
+
+
+    
+
+
+<div class="boxC">
+	<h3>Recent tags</h3>
+	<div class="body">
+         <div class="tags" id="recent-tags">
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-chauhan" title="see questions tagged 'chauhan'" href="/tags/chauhan/">chauhan</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-lalit" title="see questions tagged 'lalit'" href="/tags/lalit/">lalit</a>
+        
+            <a rel="tag" style="font-size: 13px;" class="tag-link-ekaurajeeb" title="see questions tagged 'ekaurajeeb'" href="/tags/ekaurajeeb/">ekaurajeeb</a>
+        
+            <a rel="tag" style="font-size: 13px;" class="tag-link-ajeebtag" title="see questions tagged 'ajeebtag'" href="/tags/ajeebtag/">ajeebtag</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-newtagmera3" title="see questions tagged 'newtagmera3'" href="/tags/newtagmera3/">newtagmera3</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-newtagmera" title="see questions tagged 'newtagmera'" href="/tags/newtagmera/">newtagmera</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-onemoretag" title="see questions tagged 'onemoretag'" href="/tags/onemoretag/">onemoretag</a>
+        
+            <a rel="tag" style="font-size: 15px;" class="tag-link-newtag1" title="see questions tagged 'newtag1'" href="/tags/newtag1/">newtag1</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-pqt" title="see questions tagged 'pqt'" href="/tags/pqt/">pqt</a>
+        
+            <a rel="tag" style="font-size: 14px;" class="tag-link-newtag3" title="see questions tagged 'newtag3'" href="/tags/newtag3/">newtag3</a>
+        
+            <a rel="tag" style="font-size: 14px;" class="tag-link-tag1" title="see questions tagged 'tag1'" href="/tags/tag1/">tag1</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-new4" title="see questions tagged 'new4'" href="/tags/new4/">new4</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-ntew" title="see questions tagged 'ntew'" href="/tags/ntew/">ntew</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-tagtest1" title="see questions tagged 'tagtest1'" href="/tags/tagtest1/">tagtest1</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-baba" title="see questions tagged 'baba'" href="/tags/baba/">baba</a>
+        
+            <a rel="tag" style="font-size: 15px;" class="tag-link-chrome" title="see questions tagged 'chrome'" href="/tags/chrome/">chrome</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-github" title="see questions tagged 'github'" href="/tags/github/">github</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-lediv" title="see questions tagged 'lediv'" href="/tags/lediv/">lediv</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-hypercube" title="see questions tagged 'hypercube'" href="/tags/hypercube/">hypercube</a>
+        
+            <a rel="tag" style="font-size: 16px;" class="tag-link-tdriver" title="see questions tagged 'tdriver'" href="/tags/tdriver/">tdriver</a>
+        
+            <a rel="tag" style="font-size: 10px;" class="tag-link-off" title="see questions tagged 'off'" href="/tags/off/">off</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-mixer" title="see questions tagged 'mixer'" href="/tags/mixer/">mixer</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-pygame" title="see questions tagged 'pygame'" href="/tags/pygame/">pygame</a>
+        
+            <a rel="tag" style="font-size: 20px;" class="tag-link-cook57" title="see questions tagged 'cook57'" href="/tags/cook57/">cook57</a>
+        
+            <a rel="tag" style="font-size: 11px;" class="tag-link-chefandarray" title="see questions tagged 'chefandarray'" href="/tags/chefandarray/">chefandarray</a>
+        
+        </div>
+        <div class="more"><a href="/tags/">popular tags </a> </div>
+    </div>
+</div>
+    
+
+<div class="boxC">
+    <h3>Recent awards</h3>
+    <div class="body">
+         <ul class="badge-list">
+         
+            <li style="font-size: 10px">
+            <a href="/badges/14/critic" title="First down vote" class="medalimage badge3"></a>
+            <a href="/badges/14/critic" title="First down vote" class="medal">
+            <span class="badge3"></span> &#60; Critic &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/46655/lalitc375">lalitc375</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/26/student" title="Asked first question with at least one up vote" class="medalimage badge3"></a>
+            <a href="/badges/26/student" title="Asked first question with at least one up vote" class="medal">
+            <span class="badge3"></span> &#60; Student &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/71063/sharru05">sharru05</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/18/editor" title="First edit" class="medalimage badge3"></a>
+            <a href="/badges/18/editor" title="First edit" class="medal">
+            <span class="badge3"></span> &#60; Editor &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/97054/testusr0101">testusr0101</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/26/student" title="Asked first question with at least one up vote" class="medalimage badge3"></a>
+            <a href="/badges/26/student" title="Asked first question with at least one up vote" class="medal">
+            <span class="badge3"></span> &#60; Student &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/56913/nishanth_v">nishanth_v</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/18/editor" title="First edit" class="medalimage badge3"></a>
+            <a href="/badges/18/editor" title="First edit" class="medal">
+            <span class="badge3"></span> &#60; Editor &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/56913/nishanth_v">nishanth_v</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/1/popular-question" title="Asked a question with 1000 views" class="medalimage badge3"></a>
+            <a href="/badges/1/popular-question" title="Asked a question with 1000 views" class="medal">
+            <span class="badge3"></span> &#60; Popular Question &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/16145/bhavesh_munot">bhavesh_munot</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/15/supporter" title="First up vote" class="medalimage badge3"></a>
+            <a href="/badges/15/supporter" title="First up vote" class="medal">
+            <span class="badge3"></span> &#60; Supporter &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/38692/codedecode0111">codedecode0111</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/18/editor" title="First edit" class="medalimage badge3"></a>
+            <a href="/badges/18/editor" title="First edit" class="medal">
+            <span class="badge3"></span> &#60; Editor &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/88976/wormx">wormx</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/26/student" title="Asked first question with at least one up vote" class="medalimage badge3"></a>
+            <a href="/badges/26/student" title="Asked first question with at least one up vote" class="medal">
+            <span class="badge3"></span> &#60; Student &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/27514/tushar_1812">tushar_1812</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/19/scholar" title="First accepted answer on your own question" class="medalimage badge3"></a>
+            <a href="/badges/19/scholar" title="First accepted answer on your own question" class="medal">
+            <span class="badge3"></span> &#60; Scholar &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/17259/ankit3193">ankit3193</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/1/popular-question" title="Asked a question with 1000 views" class="medalimage badge3"></a>
+            <a href="/badges/1/popular-question" title="Asked a question with 1000 views" class="medal">
+            <span class="badge3"></span> &#60; Popular Question &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/2382/adurysk">adurysk</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/18/editor" title="First edit" class="medalimage badge3"></a>
+            <a href="/badges/18/editor" title="First edit" class="medal">
+            <span class="badge3"></span> &#60; Editor &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/92309/redouane">redouane</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/18/editor" title="First edit" class="medalimage badge3"></a>
+            <a href="/badges/18/editor" title="First edit" class="medal">
+            <span class="badge3"></span> &#60; Editor &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/62200/amitvishw">amitvishw</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/2/notable-question" title="Asked a question with 2500 views" class="medalimage badge2"></a>
+            <a href="/badges/2/notable-question" title="Asked a question with 2500 views" class="medal">
+            <span class="badge2"></span> &#60; Notable Question &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/7523/mugurelionut">mugurelionut</a></span>
+            </li>
+        
+            <li style="font-size: 10px">
+            <a href="/badges/18/editor" title="First edit" class="medalimage badge3"></a>
+            <a href="/badges/18/editor" title="First edit" class="medal">
+            <span class="badge3"></span> &#60; Editor &#62;</a>
+            <span class='user-rating user-rating-0'><span>0&#9733;</span><a href="/users/89394/snowpeak">snowpeak</a></span>
+            </li>
+        
+        </ul>
+        <div class="more"><a href="/badges/">all awards </a> </div>
+     </div>
+</div>
+
+
+
+        </div>
+        <div id="tail" style="clear:both;">
+            
+    <div class="pager"><p class="paginator"><span class="curr this_page">1</span><a class="page" href="/questions/?sort=active&amp;page=2" >2</a><a class="page" href="/questions/?sort=active&amp;page=3" >3</a><a class="page" href="/questions/?sort=active&amp;page=4" >4</a><a class="page" href="/questions/?sort=active&amp;page=5" >5</a>
+                
+            
+        
+    
+        
+          ...
+        
+    
+        
+            
+                
+                     <a class="page" href="/questions/?sort=active&amp;page=353" >353</a><span class="next"><a href="/questions/?sort=active&amp;page=2" title="next page">next &raquo;</a></span></p></div>
+    <div class="pagesize"><div class="paginator"><span class="text">posts per page</span><span class="page"><a href="/questions/?sort=active&amp;pagesize=15">15</a></span><span class="curr">30</span><span class="page"><a href="/questions/?sort=active&amp;pagesize=50">50</a></span></div></div>
+
+        </div>
+    </div>
+    <div class="spacer3"></div>
+</div>
+
+        
+            
+            <div id="ground">
+                
+                    <p><html>
+<head>
+<link rel="stylesheet" type="text/css" href="/m/default/media/style/cc.css">
+</head></p>
+<div id="cc-footer" class="cc-wrapper">
+    <div class="cc-inner-wrapper">
+        <!-- SECOND NAV -->
+        <div class="cc-cols-2">
+            <div id="cc-secondary-nav">
+                <ul>
+                    <!-- <li><a href="http://blog.corp.pw/" target="_blank">.pw Corp Blog</a></li>
+                    <li><a href="http://start.pw/" target="_blank">Vision</li> -->
+                    <li><a href="http://www.codechef.com/aboutus/">About CodeChef</a></li>
+                    <li><a href="http://www.directi.com/" target="_blank">About Directi</a></li>
+                    <li><a href="http://www.codechef.com/ceoscorner/">CEO's Corner</a></li>
+                    <!-- <li><a href="http://wiki.directi.com/" target="_blank">Wiki</a></li>
+                    <li><a href="http://wiki.directi.com/display/corp/Home" target="_blank">About</a></li> -->
+                </ul>
+                <ul>
+                    <li><a href="http://www.codechef.com/campus/">CodeChef Campus Chapters</a></li>
+                    <li><a href="http://www.codechef.com/school/">CodeChef For Schools</a></li>
+                    <li><a href="http://www.codechef.com/contactus">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="cc-fineprint">
+                <p>© 2009, Directi Group. All Rights Reserved.</p>
+                <p><small>Powered by OSQA<br> </small></p>
+            </div>
+        </div>
+        <!-- /SECOND NAV -->
+        <!-- LEGAL & COPYRIGHT -->
+        <div>
+            <div id="cc-sponsor-strip">
+                <a href="http://www.directi.com" target="_blank"><img src="/m/default/media/images/footer-sponsor-strip.gif" alt="Sponsors" title="Sponsors"></a>
+            </div>
+        </div>
+        <!-- /LEGAL & COPYRIGHT -->
+    </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4090524-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Start Alexa Certify Javascript -->
+
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"q16Cj1a8gN00iz", domain:"codechef.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=q16Cj1a8gN00iz" style="display:none" height="1" width="1" alt="" /></noscript>
+
+<!-- End Alexa Certify Javascript -->
+                
+            </div>
+            
+        
+        
+        
+        
+        </div>
+
+        <!-- Put all elements with fixed position here, IE6 fixed position fix: http://ryanfait.com/position-fixed-ie6/ -->
+        <div class="notify" style="display:none">
+            
+                
+            
+            <a id="close-notify" onclick="notify.close(true)">&#215;</a>
+        </div>
+
+    
+<link rel="stylesheet" href="/static/debug_toolbar/css/print.css" type="text/css" media="print" />
+<link rel="stylesheet" href="/static/debug_toolbar/css/toolbar.css" type="text/css" />
+
+<!-- Prevent our copy of jQuery from registering as an AMD module on sites that use RequireJS. -->
+<script src="/static/debug_toolbar/js/jquery_pre.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/static/debug_toolbar/js/jquery_post.js"></script>
+
+<script src="/static/debug_toolbar/js/toolbar.js"></script>
+<div id="djDebug" class="djdt-hidden" dir="ltr"
+     data-store-id="dd98f3eaa9604fe6b4b6f65f10007966" data-render-panel-url="/debug/render_panel/"
+     >
+	<div class="djdt-hidden" id="djDebugToolbar">
+		<ul id="djDebugPanelList">
+			
+			<li><a id="djHideToolBarButton" href="#" title="Hide toolbar">Hide &#187;</a></li>
+			
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtVersionsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Versions" class="VersionsPanel">
+					
+					Versions
+					
+					
+						<br /><small>Django 1.8</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTimerPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Time" class="TimerPanel">
+					
+					Time
+					
+					
+						<br /><small>CPU: 2704.00ms (2719.74ms)</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSettingsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Settings from &lt;code&gt;settings&lt;/code&gt;" class="SettingsPanel">
+					
+					Settings
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtHeadersPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Headers" class="HeadersPanel">
+					
+					Headers
+					
+					
+						
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRequestPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Request" class="RequestPanel">
+					
+					Request
+					
+					
+						<br /><small>index</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSQLPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="SQL queries from 1 connection" class="SQLPanel">
+					
+					SQL
+					
+					
+						<br /><small>138 queries in 77.74ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtStaticFilesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Static files (79 found, 0 used)" class="StaticFilesPanel">
+					
+					Static files
+					
+					
+						<br /><small>0 files used</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtTemplatesPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Templates (75 rendered)" class="TemplatesPanel">
+					
+					Templates
+					
+					
+						<br /><small>paginator/sort_tabs.html</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtCachePanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Cache calls from 1 backend" class="CachePanel">
+					
+					Cache
+					
+					
+						<br /><small>129 calls in 41.79ms</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtSignalsPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Signals" class="SignalsPanel">
+					
+					Signals
+					
+					
+						<br /><small>17 receivers of 12 signals</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtLoggingPanel" checked="checked" title="Disable for next and successive requests" />
+					
+						<a href="#" title="Log messages" class="LoggingPanel">
+					
+					Logging
+					
+					
+						<br /><small>0 messages</small>
+					
+					
+					
+						</a>
+					
+				</li>
+			
+				<li class="djDebugPanelButton">
+					<input type="checkbox" data-cookie="djdtRedirectsPanel" title="Enable for next and successive requests" />
+					
+						<div class="djdt-contentless djdt-disabled">
+					
+					Intercept redirects
+					
+					
+						</div>
+					
+				</li>
+			
+		</ul>
+	</div>
+	<div class="djdt-hidden" id="djDebugToolbarHandle">
+		<span title="Show toolbar" id="djShowToolBarButton">&#171;</span>
+	</div>
+	
+		
+			<div id="VersionsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Versions</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TimerPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Time</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SettingsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Settings from <code>settings</code></h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="HeadersPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Headers</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="RequestPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Request</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SQLPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>SQL queries from 1 connection</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="StaticFilesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Static files (79 found, 0 used)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="TemplatesPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Templates (75 rendered)</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="CachePanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Cache calls from 1 backend</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="SignalsPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Signals</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+			<div id="LoggingPanel" class="djdt-panelContent">
+				<div class="djDebugPanelTitle">
+					<a href="" class="djDebugClose"></a>
+					<h3>Log messages</h3>
+				</div>
+				<div class="djDebugPanelContent">
+					
+					<img src="/static/debug_toolbar/img/ajax-loader.gif" alt="loading" class="djdt-loader" />
+					<div class="djdt-scroll"></div>
+					
+				</div>
+			</div>
+		
+	
+		
+	
+	<div id="djDebugWindow" class="djdt-panelContent"></div>
+</div>
+</body>
+</html>
+<!-- end template base_content.html -->
