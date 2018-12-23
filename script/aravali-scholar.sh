@@ -5,3 +5,5 @@ do
 adduser --disabled-login --gecos "" --quiet $f1;
 echo $f1:$f2 | chpasswd;
 done <"$file"
+
+touch lalit123.txt
