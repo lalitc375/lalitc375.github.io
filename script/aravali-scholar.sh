@@ -1,4 +1,3 @@
-#!/bin/bash
 file="/var/aravaliScript/user-passwords.txt"
 while IFS=' ' read  f1 f2
 do
