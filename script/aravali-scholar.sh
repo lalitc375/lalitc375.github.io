@@ -1,4 +1,4 @@
-file="/tmp/user-passwords1.txt"
+file="/var/aravaliScript/user-passwords.txt"
 while IFS=' ' read  f1 f2
 do
 /usr/sbin/adduser --disabled-login --gecos "" --quiet $f1;
