@@ -1,2 +1,3 @@
 www.khanacademy.org
 cdn.kstatic.org
+lalitc375.github.io
