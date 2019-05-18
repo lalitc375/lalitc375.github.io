@@ -2,3 +2,4 @@ www.khanacademy.org
 cdn.kastatic.org
 cdn.kasandbox.org
 lalitc375.github.io
+youtube.com
