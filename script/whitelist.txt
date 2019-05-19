@@ -1,8 +1,7 @@
-www.khanacademy.org
-cdn.kastatic.org
-cdn.kasandbox.org
+.khanacademy.org
+.kastatic.org
+.kasandbox.org
 lalitc375.github.io
-youtube.com
-www.youtube.com
+.youtube.com
 .ytimg.com
 .amazonaws.com
