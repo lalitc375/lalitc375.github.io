@@ -2,7 +2,6 @@
 .kastatic.org
 .kasandbox.org
 lalitc375.github.io
-.youtube.com
 .ytimg.com
 .amazonaws.com
 .googlevideo.com
