@@ -5,3 +5,4 @@ lalitc375.github.io
 youtube.com
 www.youtube.com
 .ytimg.com
+.amazonaws.com
