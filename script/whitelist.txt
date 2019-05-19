@@ -6,3 +6,4 @@ lalitc375.github.io
 .ytimg.com
 .amazonaws.com
 .googlevideo.com
+.youtube-nocookie.com
